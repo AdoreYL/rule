@@ -17,9 +17,9 @@ proxy-providers:
       - "Clash.meta"
     override:
       udp: true
-      down: "1000 Mbps"
-      up: "500 Mbps"
-      port: 27102
+      down: "500 Mbps"
+      up: "50 Mbps"
+      port: 27103
       ports: 30000-40000
       sikip_cert_verify: true
   Airport云深:
@@ -171,17 +171,17 @@ proxy-groups:
   - {name: ♻️ 日本自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|大阪|东京|(?i)Japan))^((?!(港|台|韩|新|美|阿)).)*$" }
   - {name: ♻️ 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|圣何塞|洛杉矶|(?i)States|America))^((?!(港|台|日|韩|新|阿)).)*$"}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
-#🕊️🐸📢🎞️🛩️🏡🍃⭐💧👨🏿‍💻
+#🕊️🐸📢🎞️🛩️🏡🍃⭐💧👨🏿‍💻🎵🕊
 
 # 规则匹配
 # 此规则部分没有做防泄露处理，因为弊严重大于利！
 rules:
   - DOMAIN-SUFFIX,qichiyu.com,🚀 默认代理
   - RULE-SET,private_domain,直连
-  - RULE-SET,game_cn,🎯 直连
+  - RULE-SET,direct,🎯 直连
   - RULE-SET,pt,🐸 PT
   - RULE-SET,apple_domain,🍎 Apple
-  - RULE-SET,proxylite,🚀 默认代理
+  - RULE-SET,proxy,🚀 默认代理
   - RULE-SET,ai,🤖 ChatGPT
   - RULE-SET,github_domain,👨🏿‍💻 GitHub
   - RULE-SET,youtube_domain,📹 YouTube
@@ -209,8 +209,8 @@ rule-anchor:
   class: &class {type: http, interval: 86400, behavior: classical, format: text}
 rule-providers: 
   private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
-  proxylite: { <<: *class, url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/master/ProxyLite.list"}
-  game_cn: { <<: *class, url: "https://raw.githubusercontent.com/YuLewh/rule/refs/heads/main/geosite/game_cn.list"}
+  proxy: { <<: *class, url: "https://raw.githubusercontent.com/YuLewh/rule/refs/heads/main/geosite/proxy.list"}
+  direct: { <<: *class, url: "https://raw.githubusercontent.com/YuLewh/rule/refs/heads/main/geosite/direct.list"}
   pt: { <<: *class, url: "https://raw.githubusercontent.com/YuLewh/rule/refs/heads/main/geosite/pt.list"}
   ai: {  <<: *domain, url: "https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-chat-!cn.mrs" }
   youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
