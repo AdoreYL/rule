@@ -12,6 +12,7 @@ DOMAIN-KEYWORD,1e100
 DOMAIN-SUFFIX,spotify.com
 DOMAIN-SUFFIX,hjd2048.com
 DOMAIN-SUFFIX,docker.com
+DOMAIN-SUFFIX,qichiyu.com
 
 
 # 国外DNS
@@ -32,4 +33,5 @@ IP-CIDR,1.1.1.1/32,no-resolve
 IP-CIDR,1.0.0.1/32,no-resolve
 IP-CIDR,185.222.222.222/32,no-resolve
 IP-CIDR,208.67.222.222/32,no-resolve
+
 IP-CIDR,208.67.220.220/32,no-resolve
