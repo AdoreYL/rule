@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "rules": [
+    {
+      "domain_suffix": [
+        "spotify.com",
+        "hjd2048.com",
+        "docker.com",
+        "qichiyu.com",
+        "joeyblog.net"
+      ]
+    }
+  ]
