@@ -13,7 +13,7 @@ config config 'config'
 
 config proxy 'proxy'
 	option enabled '1'
-	option tcp_mode 'tun'
+	option tcp_mode 'redirect'
 	option udp_mode 'tun'
 	option ipv4_dns_hijack '1'
 	option ipv6_dns_hijack '1'
@@ -88,9 +88,9 @@ config mixin 'mixin'
 	option geoip_format 'mmdb'
 	option geodata_loader 'memconservative'
 	option geosite_url 'https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geosite.dat'
-	option geoip_mmdb_url 'https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.metadb'
+	option geoip_mmdb_url 'https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/country-lite.mmdb'
 	option geoip_dat_url 'https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/geoip-lite.dat'
-	option geoip_asn_url 'https://github.com/MetaCubeX/meta-rules-dat/releases/download/latest/GeoLite2-ASN.mmdb'
+	option geoip_asn_url 'https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb'
 	option geox_auto_update '1'
 	option geox_update_interval '24'
 	option mixin_file_content '0'
@@ -103,15 +103,18 @@ config mixin 'mixin'
 	option fake_ip_filter_mode 'blacklist'
 	option global_client_fingerprint 'chrome'
 	option api_secret 'Zz8854774123.'
+	option tun_enabled '1'
+	option dns_enabled '1'
 
 config env 'env'
 	option disable_safe_path_check '0'
 	option disable_loopback_detector '0'
 	option disable_quic_go_gso '0'
 	option disable_quic_go_ecn '0'
+	option skip_system_ipv6_check '0'
 
 config authentication
-	option enabled '1'
+	option enabled '0'
 	option username 'nikki'
 	option password 'Aa8854774123.'
 
@@ -212,14 +215,17 @@ config router_access_control
 	list cgroup 'qbittorrent'
 	list cgroup 'tailscale'
 	list cgroup 'zerotier'
+	option dns '0'
 
 config lan_access_control
 	option enabled '1'
 	option proxy '1'
+	option dns '0'
 
 config lan_access_control
 	option enabled '1'
 	option proxy '1'
+	option dns '0'
 
 config router_access_control
 	option enabled '1'
@@ -238,14 +244,17 @@ config router_access_control
 	list group 'ntp'
 	list group 'ubus'
 	option proxy '0'
+	option dns '0'
 
 config router_access_control
 	option enabled '1'
 	option proxy '1'
+	option dns '0'
 
 config lan_access_control
 	option enabled '1'
 	option proxy '1'
+	option dns '0'
 
 config routing 'routing'
 	option tproxy_fw_mark '0x80'
