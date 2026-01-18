@@ -4,7 +4,7 @@
 # 机场订阅
 proxy-providers:
   Airport云深:
-    url: "https://sub.102012.xyz/YbN4YHN3oNPuaYLQwuGG/download/CF_Workers"
+    url: "订阅"
     type: http
     interval: 86400
     health-check:
