@@ -130,9 +130,9 @@ dns:
 # 如果相应分组没有筛选到对应的国家，请根据自己节点名字调整筛选关键字。
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
-pr: &pr {type: select, proxies: [🚀 默认代理, 🔯 美国故转, 🔯 日本故转, ♻️ 日本自动, ♻️ 美国自动, ♻️ CF自动, ♻️ 自动选择, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇭🇰 香港节点, 🇰🇷 韩国节点, 🇷🇺 CF代理, 🌐 全部节点, 直连]}
+pr: &pr {type: select, proxies: [🚀 默认代理, 🔯 美国故转, 🔯 日本故转, 🔯 香港故转, ♻️ 日本自动, ♻️ 香港自动, ♻️ 美国自动, ♻️ CF自动, ♻️ 自动选择, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇭🇰 香港节点, 🇰🇷 韩国节点, 🇷🇺 CF代理, 🌐 全部节点, 直连]}
 proxy-groups:
-  - {name: 🚀 默认代理, type: select, proxies: [🔯 美国故转, 🔯 日本故转, ♻️ 日本自动, ♻️ 美国自动, ♻️ CF自动, ♻️ 自动选择, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇭🇰 香港节点, 🇰🇷 韩国节点, 🇷🇺 CF代理, 🌐 全部节点, 直连]}
+  - {name: 🚀 默认代理, type: select, proxies: [🔯 美国故转, 🔯 日本故转, 🔯 香港故转, ♻️ 日本自动, ♻️ 香港自动, ♻️ 美国自动, ♻️ CF自动, ♻️ 自动选择, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇭🇰 香港节点, 🇰🇷 韩国节点, 🇷🇺 CF代理, 🌐 全部节点, 直连]}
   - {name: 🌐 全部节点, type: select, include-all: true}
   - {name: 📹 YouTube, <<: *pr}
   - {name: 🤖 ChatGPT, <<: *pr}
@@ -143,16 +143,17 @@ proxy-groups:
   - {name: 🇰🇷 韩国节点, type: select, include-all: true, filter: "(?=.*(?i)(韩|kr|首尔|春川))^(?!.*(JC)).*$"}
 #  - {name: 🇦🇪 阿联酋节点, type: select, include-all: true, filter: "(?=.*(?i)(迪拜|dubai|abu dhabi|阿布扎比|阿联酋))^(?!.*(JC)).*$"}
   - {name: 🇷🇺 CF代理, type: select, include-all: true, filter: "(?=.*(?i)(CF))^(?!.*(JC)).*$"}
-#  - {name: 🔯 香港故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|香港|(?i)Hong))^((?!(台|日|韩|新|深|美|迪拜|JC)).)*$" }
+  - {name: 🔯 香港故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|香港|(?i)Hong))^((?!(台|日|韩|新|深|美|迪拜|JC)).)*$" }
   - {name: 🔯 日本故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|大阪|东京|(?i)Japan))^((?!(港|台|韩|新|深|美|迪拜|JC)).)*$" }
   - {name: 🔯 美国故转, type: fallback, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|圣何塞|洛杉矶|(?i)States|America))^((?!(AUS|RUS|港|台|日|韩|新|迪拜|JC)).)*$"}
-#  - {name: ♻️ 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|香港|(?i)Hong))^((?!(台|日|韩|新|深|美|迪拜|JC)).)*$"}
+  - {name: ♻️ 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|香港|(?i)Hong))^((?!(台|日|韩|新|深|美|迪拜|JC)).)*$"}
   - {name: ♻️ CF自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(?i)(CF))^(?!.*(JC)).*$"}
   - {name: ♻️ 日本自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|大阪|东京|(?i)Japan))^((?!(港|台|韩|新|迪拜|JC)).)*$" }
   - {name: ♻️ 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|圣何塞|洛杉矶|(?i)States|America))^((?!(AUS|RUS|港|台|日|韩|新|迪拜|JC)).)*$"}
   - {name: ♻️ 自动选择, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "^((?!(直连)).)*$"}
   - {name: 🎵 TikTok, <<: *pr}
   - {name: 🎥 NETFLIX, <<: *pr}
+  - {name: 🏡 TZ, <<: *pr}
   - {name: 🐸 PT, <<: *pr}
   - {name: ✈️ Speedtest, <<: *pr}
   - {name: 🍀 Google, <<: *pr}
@@ -175,6 +176,7 @@ rules:
   - DOMAIN-SUFFIX,qichiyu.com,🚀 默认代理
   - RULE-SET,private_ip,直连,no-resolve
   - RULE-SET,private_domain,直连
+  - RULE-SET,tz,🏡 TZ
   - RULE-SET,pt,🐸 PT
   - RULE-SET,ai,🤖 ChatGPT
   - RULE-SET,direct,🎯 直连
@@ -208,6 +210,7 @@ rule-anchor:
 rule-providers: 
   fakeipfilter_domain: {<<: *domain, url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/fakeip-filter.mrs"}
   private_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
+  tz: { <<: *class, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geosite/ai.list"}
   direct: { <<: *class, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geosite/direct.list"}
   ai: {  <<: *class, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geosite/ai.list" }
   pt: { <<: *class, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geosite/pt.list"}
