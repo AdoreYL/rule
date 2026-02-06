@@ -3,9 +3,14 @@
 
 # 域名关键字匹配
 DOMAIN-KEYWORD,tradingview
+DOMAIN-KEYWORD,bybit
+DOMAIN-KEYWORD,binance.com
 
 
 # 域名后缀匹配
 DOMAIN-SUFFIX,tradingview.com
+DOMAIN-SUFFIX,bybit.com
+DOMAIN-SUFFIX,binance.com
+
 
 
