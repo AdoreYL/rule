@@ -130,16 +130,16 @@ dns:
 # 如果相应分组没有筛选到对应的国家，请根据自己节点名字调整筛选关键字。
 # 出站策略
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
-pr: &pr {type: select, proxies: [🚀 默认代理, 🔯 美国故转, 🔯 日本故转, 🔯 香港故转, ♻️ 日本自动, ♻️ 香港自动, ♻️ 美国自动, ♻️ CF自动, ♻️ 自动选择, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇭🇰 香港节点, 🇰🇷 韩国节点, 🇷🇺 CF代理, 🌐 全部节点, 直连]}
+pr: &pr {type: select, proxies: [🚀 默认代理, 🔯 美国故转, 🔯 日本故转, 🔯 香港故转, ♻️ 日本自动, ♻️ 香港自动, ♻️ 美国自动, ♻️ CF自动, ♻️ 自动选择, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇭🇰 香港节点, 🇰🇷 韩国节点, 🇦🇪 西亚节点, 🇷🇺 CF代理, 🌐 全部节点, 直连]}
 proxy-groups:
-  - {name: 🚀 默认代理, type: select, proxies: [🔯 美国故转, 🔯 日本故转, 🔯 香港故转, ♻️ 日本自动, ♻️ 香港自动, ♻️ 美国自动, ♻️ CF自动, ♻️ 自动选择, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇭🇰 香港节点, 🇰🇷 韩国节点, 🇷🇺 CF代理, 🌐 全部节点, 直连]}
+  - {name: 🚀 默认代理, type: select, proxies: [🔯 美国故转, 🔯 日本故转, 🔯 香港故转, ♻️ 日本自动, ♻️ 香港自动, ♻️ 美国自动, ♻️ CF自动, ♻️ 自动选择, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇭🇰 香港节点, 🇰🇷 韩国节点, 🇦🇪 西亚节点, 🇷🇺 CF代理, 🌐 全部节点, 直连]}
   - {name: 🌐 全部节点, type: select, include-all: true}
   - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?=.*(?i)(美|us|圣何塞|洛杉矶|凤凰城))^(?!.*(AUS|RUS|JC)).*$"}
   - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?=.*(?i)(日|jp|大阪|东京))^(?!.*(JC)).*$"}
   - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?=.*(?i)(港|hk|xg|香港))^(?!.*(JC)).*$"}
   - {name: 🇸🇬 狮城节点, type: select, include-all: true, filter: "(?=.*(?i)(新|sg|新加坡|狮城|坡))^(?!.*(JC)).*$"}
   - {name: 🇰🇷 韩国节点, type: select, include-all: true, filter: "(?=.*(?i)(韩|kr|首尔|春川))^(?!.*(JC)).*$"}
-#  - {name: 🇦🇪 阿联酋节点, type: select, include-all: true, filter: "(?=.*(?i)(迪拜|dubai|abu dhabi|阿布扎比|阿联酋))^(?!.*(JC)).*$"}
+  - {name: 🇦🇪 西亚节点, type: select, include-all: true, filter: "(?=.*(?i)(迪拜|dubai|abu dhabi|阿布扎比|阿联酋))^(?!.*(JC)).*$"}
   - {name: 🇷🇺 CF代理, type: select, include-all: true, filter: "(?=.*(?i)(CF))^(?!.*(JC)).*$"}
   - {name: 📹 YouTube, <<: *pr}
   - {name: 🤖 ChatGPT, <<: *pr}
