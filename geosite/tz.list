@@ -6,6 +6,7 @@ DOMAIN-KEYWORD,tradingview
 DOMAIN-KEYWORD,bybit
 DOMAIN-KEYWORD,binance.com
 DOMAIN-KEYWORD,forex.com
+DOMAIN-KEYWORD,fastbull.com
 
 
 # 域名后缀匹配
@@ -13,6 +14,7 @@ DOMAIN-SUFFIX,tradingview.com
 DOMAIN-SUFFIX,bybit.com
 DOMAIN-SUFFIX,binance.com
 DOMAIN-SUFFIX,forex.com
+DOMAIN-SUFFIX,fastbull.com
 
 
 
