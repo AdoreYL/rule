@@ -47,7 +47,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 300
     proxy: 直连
-  Airport中转:
+  Airport落地:
     url: "订阅"
     type: http
     interval: 86400
@@ -149,8 +149,8 @@ proxy-groups:
   - {name: 🇸🇬 狮城节点, type: select, include-all: true, filter: "(?=.*(?i)(新|sg|新加坡|狮城|坡))^(?!.*(JC)).*$"}
   - {name: 🇰🇷 韩国节点, type: select, include-all: true, filter: "(?=.*(?i)(韩|kr|首尔|春川))^(?!.*(JC)).*$"}
   - {name: 🇦🇪 西亚节点, type: select, include-all: true, filter: "(?=.*(?i)(迪拜|dubai|abu dhabi|阿布扎比|阿联酋))^(?!.*(JC)).*$"}
-  - {name: 🛩 中转, type: select, include-all: true, filter: "(?=.*(?i)(JC|AWS))^(?!.*(CF)).*$"}
-  - {name: ⭐ 落地, type: select, include-all: true, filter: "(?=.*(?i)(SS_Oracle|SS_Softbank))^(?!.*(JC|CF)).*$"}
+  - {name: 🛩 中转, type: select, include-all: true, filter: "(?=.*(?i)(中转|AWS))^(?!.*(CF)).*$"}
+  - {name: ⭐ 落地, type: select, include-all: true, filter: "(?=.*(?i)(SS_Oracle|SS_Softbank|SS_Aliyun))^(?!.*(JC|CF)).*$"}
   - {name: 🕊 CF代理, type: select, include-all: true, filter: "(?=.*(?i)(CF))^(?!.*(JC)).*$"}
   - {name: 📹 YouTube, <<: *pr}
   - {name: 🤖 ChatGPT, <<: *pr}
