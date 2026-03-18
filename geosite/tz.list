@@ -11,7 +11,7 @@ DOMAIN-KEYWORD,fxcm
 DOMAIN-KEYWORD,js-account
 DOMAIN-KEYWORD,myfxcm
 DOMAIN-KEYWORD,gaincapital
-
+DOMAIN-KEYWORD,cityindex
 
 # 域名后缀匹配
 DOMAIN-SUFFIX,tradingview.com
@@ -24,6 +24,7 @@ DOMAIN-SUFFIX,js-account.com
 DOMAIN-SUFFIX,myfxcm.com
 DOMAIN-SUFFIX,gaincapital.com
 DOMAIN-SUFFIX,stonex.com
+DOMAIN-SUFFIX,cityindex.com
 
 # 2. 隐藏的授权与云端接口 (解决验证失败的关键)
 DOMAIN-SUFFIX,auth0.com
