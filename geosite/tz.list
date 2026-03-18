@@ -4,12 +4,12 @@
 # 域名关键字匹配
 DOMAIN-KEYWORD,tradingview
 DOMAIN-KEYWORD,bybit
-DOMAIN-KEYWORD,binance.com
-DOMAIN-KEYWORD,forex.com
-DOMAIN-KEYWORD,fastbull.com
-DOMAIN-KEYWORD,fxcm.com
-DOMAIN-KEYWORD,js-account.com
-DOMAIN-KEYWORD,myfxcm.com
+DOMAIN-KEYWORD,binance
+DOMAIN-KEYWORD,forex
+DOMAIN-KEYWORD,fastbull
+DOMAIN-KEYWORD,fxcm
+DOMAIN-KEYWORD,js-account
+DOMAIN-KEYWORD,myfxcm
 
 
 # 域名后缀匹配
