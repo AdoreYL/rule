@@ -10,6 +10,7 @@ DOMAIN-KEYWORD,fastbull
 DOMAIN-KEYWORD,fxcm
 DOMAIN-KEYWORD,js-account
 DOMAIN-KEYWORD,myfxcm
+DOMAIN-KEYWORD,gaincapital
 
 
 # 域名后缀匹配
@@ -21,6 +22,8 @@ DOMAIN-SUFFIX,fastbull.com
 DOMAIN-SUFFIX,fxcm.com
 DOMAIN-SUFFIX,js-account.com
 DOMAIN-SUFFIX,myfxcm.com
+DOMAIN-SUFFIX,gaincapital.com
+DOMAIN-SUFFIX,stonex.com
 
 
 
