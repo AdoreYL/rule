@@ -9,6 +9,7 @@ DOMAIN-KEYWORD,forex.com
 DOMAIN-KEYWORD,fastbull.com
 DOMAIN-KEYWORD,fxcm.com
 DOMAIN-KEYWORD,js-account.com
+DOMAIN-KEYWORD,myfxcm.com
 
 
 # 域名后缀匹配
@@ -19,6 +20,7 @@ DOMAIN-SUFFIX,forex.com
 DOMAIN-SUFFIX,fastbull.com
 DOMAIN-SUFFIX,fxcm.com
 DOMAIN-SUFFIX,js-account.com
+DOMAIN-SUFFIX,myfxcm.com
 
 
 
