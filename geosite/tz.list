@@ -26,12 +26,4 @@ DOMAIN-SUFFIX,gaincapital.com
 DOMAIN-SUFFIX,stonex.com
 DOMAIN-SUFFIX,cityindex.com
 
-# 2. 隐藏的授权与云端接口 (解决验证失败的关键)
-DOMAIN-SUFFIX,auth0.com
-DOMAIN-SUFFIX,okta.com
-DOMAIN-SUFFIX,cloudfront.net
-DOMAIN-SUFFIX,amazonaws.com
-DOMAIN-SUFFIX,akamaized.net
-DOMAIN-SUFFIX,akamaihd.net
-
 
