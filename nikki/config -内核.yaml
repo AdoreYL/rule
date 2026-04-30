@@ -140,8 +140,8 @@ proxy-groups:
   - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?=.*(?i)(港|hk|xg|香港))^(?!.*(JC)).*$"}
   - {name: 🇸🇬 狮城节点, type: select, include-all: true, filter: "(?=.*(?i)(新|sg|新加坡|狮城|坡))^(?!.*(JC)).*$"}
   - {name: 🇰🇷 韩国节点, type: select, include-all: true, filter: "(?=.*(?i)(韩|kr|首尔|春川))^(?!.*(JC)).*$"}
-  - {name: 🛩 中转, type: select, include-all: true, filter: "(?=.*(?i)(中转|AWS))^(?!.*(CF)).*$"}
-  - {name: ⭐ 落地, type: select, include-all: true, filter: "(?=.*(?i)(SS_Oracle|SS_Softbank|SS_Aliyun|SS_AWS))^(?!.*(JC|CF)).*$"}
+  - {name: 🛩 中转, type: select, include-all: true, filter: "(?=.*(?i)(中转_RY|中转_SS|AWS|东京成田_CF))^(?!.*(JC)).*$"}
+  - {name: ⭐ 落地, type: select, include-all: true, filter: "(?=.*(?i)(SS_Oracle|SS_Softbank|SS_Aliyun|SS_AWS))^(?!.*(CF|JC)).*$"}
   - {name: 🕊 CF代理, type: select, include-all: true, filter: "(?=.*(?i)(CF))^(?!.*(JC)).*$"}
   - {name: 🏡 TZ, <<: *pr}
   - {name: 📹 YouTube, <<: *pr}
