@@ -1,46 +1,33 @@
-# 代理补充列表
+# 自定义代理补充列表
 
-
-# 域名关键字匹配
+# 1. 域名关键字匹配
 DOMAIN-KEYWORD,1e100
 
-
-# 域名后缀匹配
-DOMAIN-SUFFIX,spotify.com
-DOMAIN-SUFFIX,hjd2048.com
-DOMAIN-SUFFIX,docker.com
-DOMAIN-SUFFIX,qichiyu.com
-DOMAIN-SUFFIX,joeyblog.net
-DOMAIN-SUFFIX,v2rayssr.com
-DOMAIN-SUFFIX,dewx.top
-DOMAIN-SUFFIX,cloudflare.com
-
-
-
-
-# 国外DNS
-DOMAIN-SUFFIX,dns.google
+# 2. 域名后缀匹配 (包含国外 DNS)
 DOMAIN-SUFFIX,1dot1dot1dot1.cloudflare-dns.com
-DOMAIN-SUFFIX,dot.sb
-DOMAIN-SUFFIX,dns.umbrella.com
-DOMAIN-SUFFIX,dns.quad9.net
-DOMAIN-SUFFIX,dns.google
 DOMAIN-SUFFIX,cloudflare-dns.com
+DOMAIN-SUFFIX,cloudflare.com
+DOMAIN-SUFFIX,dewx.top
+DOMAIN-SUFFIX,dns.google
+DOMAIN-SUFFIX,dns.quad9.net
+DOMAIN-SUFFIX,dns.umbrella.com
+DOMAIN-SUFFIX,docker.com
 DOMAIN-SUFFIX,doh.dns.sb
 DOMAIN-SUFFIX,doh.opendns.com
-DOMAIN-SUFFIX,dns.quad9.net
+DOMAIN-SUFFIX,dot.sb
+DOMAIN-SUFFIX,googleusercontent.com
+DOMAIN-SUFFIX,hjd2048.com
 DOMAIN-SUFFIX,hk-hkg.doh.sb
-IP-CIDR,8.8.8.8/32,no-resolve
-IP-CIDR,8.8.4.4/32,no-resolve
-IP-CIDR,1.1.1.1/32,no-resolve
+DOMAIN-SUFFIX,joeyblog.net
+DOMAIN-SUFFIX,qichiyu.com
+DOMAIN-SUFFIX,spotify.com
+DOMAIN-SUFFIX,v2rayssr.com
+
+# 3. IP 精确匹配 (国外 DNS 防泄漏)
 IP-CIDR,1.0.0.1/32,no-resolve
+IP-CIDR,1.1.1.1/32,no-resolve
+IP-CIDR,8.8.4.4/32,no-resolve
+IP-CIDR,8.8.8.8/32,no-resolve
 IP-CIDR,185.222.222.222/32,no-resolve
-IP-CIDR,208.67.222.222/32,no-resolve
-
 IP-CIDR,208.67.220.220/32,no-resolve
-
-
-
-
-
-
+IP-CIDR,208.67.222.222/32,no-resolve
