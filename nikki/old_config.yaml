@@ -31,25 +31,7 @@ proxy-providers:
       url: https://www.gstatic.com/generate_204
       interval: 86400
     proxy: 直连
-  Airport云深:
-    url: "订阅"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连
   Airport落地:
-    url: "订阅"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.gstatic.com/generate_204
-      interval: 300
-    proxy: 直连
-  Airport中转:
     url: "订阅"
     type: http
     interval: 86400
