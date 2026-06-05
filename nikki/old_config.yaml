@@ -3,7 +3,6 @@
 # 跑裸核用户请自行去掉下方控制面板模块的注释。
 # 机场订阅
 proxy-providers:
-
   Airport_AX:
     url: "订阅"
     type: http
