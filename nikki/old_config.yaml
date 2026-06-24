@@ -145,7 +145,7 @@ proxy-groups:
   - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?=.*(?i)(美|us|圣何塞|洛杉矶|凤凰城))^(?!.*(AUS|RUS|JC)).*$"}
   - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?=.*(?i)(日|jp|大阪|东京))^(?!.*(JC)).*$"}
   - {name: 🇸🇬 狮城节点, type: select, include-all: true, filter: "(?=.*(?i)(新|sg|新加坡|狮城|坡))^(?!.*(JC)).*$"}
-  - {name: 🛩 中转, type: select, include-all: true, filter: "(?=.*(?i)(中转_RY|中转_SS|AWS|CF))^(?!.*(JC)).*$"}
+  - {name: 🛩 中转, type: select, include-all: true, filter: "(?=.*(?i)(中转_RY|中转_SS|AWS|CF|JC))^(?!.*(直连)).*$"}
   - {name: ⭐ 落地, type: select, include-all: true, filter: "(?=.*(?i)(SS_Oracle|SS_Softbank|SS_Aliyun|SS_AWS))^(?!.*(CF|JC)).*$"}
   - {name: 🏡 TZ, type: select, <<: *pr}
   - {name: 📹 YouTube, type: select, <<: *pr}
