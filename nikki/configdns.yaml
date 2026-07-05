@@ -136,24 +136,24 @@ dns:
     - https://8.8.8.8/dns-query#RULES&ecs=223.5.5.0/24
   
 # 出站策略
-pr: &pr {type: select, proxies: [🚀 默认代理, 🔯 美国故转, 🔯 日本故转, 🔯 香港故转, ♻️ 日本自动, ♻️ 香港自动, ♻️ 美国自动, ♻️ CF自动, ♻️ 自动选择, 🛩 中转, ⭐ 落地, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇭🇰 香港节点, 🇰🇷 韩国节点, 🐠 Sub节点, 🛩 JC节点, 🕊 CF代理, 🌐 全部节点, 直连]}
+pr: &pr {type: select, proxies: [🚀 默认代理, 🔯 美国故转, 🔯 日本故转, 🔯 香港故转, ♻️ 日本自动, ♻️ 香港自动, ♻️ 美国自动, ♻️ CF自动, ♻️ 自动选择, 🛩 中转, ⭐ 落地, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇭🇰 港台节点, 🇰🇷 韩国节点, 🐠 Sub节点, 🛩 JC节点, 🕊 CF代理, 🌐 全部节点, 直连]}
 proxy-groups:
-  - {name: 🚀 默认代理, type: select, proxies: [🔯 美国故转, 🔯 日本故转, 🔯 香港故转, ♻️ 日本自动, ♻️ 香港自动, ♻️ 美国自动, ♻️ CF自动, ♻️ 自动选择, 🛩 中转, ⭐ 落地, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇭🇰 香港节点, 🇰🇷 韩国节点, 🐠 Sub节点, 🛩 JC节点, 🕊 CF代理, 🌐 全部节点, 直连]}
+  - {name: 🚀 默认代理, type: select, proxies: [🔯 美国故转, 🔯 日本故转, 🔯 香港故转, ♻️ 日本自动, ♻️ 香港自动, ♻️ 美国自动, ♻️ CF自动, ♻️ 自动选择, 🛩 中转, ⭐ 落地, 🇯🇵 日本节点, 🇸🇬 狮城节点, 🇺🇲 美国节点, 🇭🇰 港台节点, 🇰🇷 韩国节点, 🐠 Sub节点, 🛩 JC节点, 🕊 CF代理, 🌐 全部节点, 直连]}
   - {name: 🌐 全部节点, type: select, include-all: true}
   - {name: 🇺🇲 美国节点, type: select, include-all: true, filter: "(?=.*(?i)(美|us|圣何塞|洛杉矶|凤凰城))^(?!.*(AUS|RUS|JC)).*$"}
   - {name: 🇯🇵 日本节点, type: select, include-all: true, filter: "(?=.*(?i)(日|jp|大阪|东京))^(?!.*(JC)).*$"}
   - {name: 🇸🇬 狮城节点, type: select, include-all: true, filter: "(?=.*(?i)(新|sg|新加坡|狮城|坡))^(?!.*(JC)).*$"}
   - {name: 🛩 中转, type: select, include-all: true, filter: "(?=.*(?i)(中转_RY|中转_SS|AWS|CF))^(?!.*(JC)).*$"}
-  - {name: ⭐ 落地, type: select, include-all: true, filter: "(?=.*(?i)(SS_Oracle|SS_Softbank|SS_Aliyun|SS_AWS))^(?!.*(CF|JC)).*$"}
+  - {name: ⭐ 落地, type: select, include-all: true, filter: "(?=.*(?i)(SS))^(?!.*(CF|JC|中转_SS)).*$"}
   - {name: 🏡 TZ, type: select, <<: *pr}
   - {name: 📹 YouTube, type: select, <<: *pr}
   - {name: 🎵 TikTok, type: select, <<: *pr}
   - {name: 🎥 NETFLIX, type: select, <<: *pr}
   - {name: 🤖 ChatGPT, type: select, <<: *pr}
   - {name: ✈️ Speedtest, type: select, <<: *pr}
-  - {name: 🇭🇰 香港节点, type: select, include-all: true, filter: "(?=.*(?i)(港|hk|xg|香港))^(?!.*(JC)).*$"}
+  - {name: 🇭🇰 港台节点, type: select, include-all: true, filter: "(?=.*(?i)(港|hk|xg|香港|台|TW|tw|台湾|台北))^(?!.*(JC)).*$"}
   - {name: 🇰🇷 韩国节点, type: select, include-all: true, filter: "(?=.*(?i)(韩|kr|首尔|春川))^(?!.*(JC)).*$"}
-  - {name: 🐠 Sub节点, type: select, include-all: true, filter: "(?=.*(?i)(BWG|Softbank|Oracle|DMIT|GCP|AWS|Aliyun|RY))^(?!.*(JC|SS|CF)).*$"}
+  - {name: 🐠 Sub节点, type: select, include-all: true, filter: "(?=.*(?i)(BWG|Softbank|Oracle|DMIT|GCP|AWS|Aliyun|RY|HX|HY))^(?!.*(JC|SS|CF)).*$"}
   - {name: 🛩 JC节点, type: select, include-all: true, filter: "(?=.*(?i)(JC))^(?!.*(CF)).*$"}
   - {name: ♻️ 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|香港|(?i)Hong))^((?!(台|日|韩|新|深|美|迪拜|JC)).)*$"}
   - {name: ♻️ CF自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(?i)(CF))^(?!.*(JC)).*$"}
