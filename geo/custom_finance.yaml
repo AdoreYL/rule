@@ -1,0 +1,187 @@
+# 文件名：custom_finance.yaml
+payload:
+  # =========================================
+  # Ultimate Finance & Trading List (Pro Edition)
+  # =========================================
+
+  # =========================================
+  # 1. Broker (美港股券商、离岸银行)
+  # =========================================
+  - DOMAIN-SUFFIX,interactivebrokers.com
+  - DOMAIN-SUFFIX,interactivebrokers.com.hk
+  - DOMAIN-SUFFIX,ibkr.com
+  - DOMAIN-SUFFIX,ibkrguides.com
+  - DOMAIN-SUFFIX,ibkrcampus.com
+  - DOMAIN-SUFFIX,schwab.com
+  - DOMAIN-SUFFIX,tdameritrade.com
+  - DOMAIN-SUFFIX,firstrade.com
+  - DOMAIN-SUFFIX,swissquote.com
+  - DOMAIN-SUFFIX,dukascopy.com
+  - DOMAIN-SUFFIX,webull.com
+  - DOMAIN-SUFFIX,webull.hk
+  - DOMAIN-SUFFIX,moomoo.com
+  - DOMAIN-SUFFIX,futunn.com
+  - DOMAIN-SUFFIX,futuhk.com
+  - DOMAIN-SUFFIX,futuholdings.com
+  - DOMAIN-SUFFIX,longbridge.hk
+  - DOMAIN-SUFFIX,longbridgeapp.com
+  - DOMAIN-SUFFIX,itiger.com
+  - DOMAIN-SUFFIX,tigerbrokers.com
+  - DOMAIN-SUFFIX,tigerbrokers.com.sg
+
+  # =========================================
+  # 2. Futures_FX (期货、外汇与自营交易)
+  # =========================================
+  - DOMAIN-SUFFIX,ampfutures.com
+  - DOMAIN-SUFFIX,ampclientportal.com
+  - DOMAIN-SUFFIX,ninjatrader.com
+  - DOMAIN-SUFFIX,tradestation.com
+  - DOMAIN-SUFFIX,tradovate.com
+  - DOMAIN-SUFFIX,topstep.com
+  - DOMAIN-SUFFIX,ftmo.com
+  - DOMAIN-SUFFIX,apextraderfunding.com
+  - DOMAIN-SUFFIX,fundingpips.com
+  - DOMAIN-SUFFIX,myfundedfx.com
+  - DOMAIN-SUFFIX,alphacapitalgroup.uk
+  - DOMAIN-SUFFIX,oanda.com
+  - DOMAIN-SUFFIX,forex.com
+  - DOMAIN-SUFFIX,cityindex.com
+  - DOMAIN-SUFFIX,fxcm.com
+  - DOMAIN-SUFFIX,gaincapital.com
+  - DOMAIN-SUFFIX,icmarkets.com
+  - DOMAIN-SUFFIX,pepperstone.com
+  - DOMAIN-SUFFIX,stonex.com
+
+  # =========================================
+  # 3. Crypto_Exchange (加密货币主站)
+  # =========================================
+  - DOMAIN-SUFFIX,binance.com
+  - DOMAIN-SUFFIX,binance.us
+  - DOMAIN-SUFFIX,bybit.com
+  - DOMAIN-SUFFIX,okx.com
+  - DOMAIN-SUFFIX,bitget.com
+  - DOMAIN-SUFFIX,coinbase.com
+  - DOMAIN-SUFFIX,kraken.com
+  - DOMAIN-SUFFIX,kucoin.com
+  - DOMAIN-SUFFIX,mexc.com
+  - DOMAIN-SUFFIX,htx.com
+  - DOMAIN-SUFFIX,gate.io
+  - DOMAIN-SUFFIX,deribit.com
+
+  # =========================================
+  # 4. Quant_API (高频量化与 WS 行情专属接口)
+  # =========================================
+  # Binance API
+  - DOMAIN,api.binance.com
+  - DOMAIN,api1.binance.com
+  - DOMAIN,api2.binance.com
+  - DOMAIN,api3.binance.com
+  - DOMAIN,api4.binance.com
+  - DOMAIN-SUFFIX,binance.me
+  # OKX API
+  - DOMAIN,www.okx.com
+  - DOMAIN,api.okx.com
+  - DOMAIN,ws.okx.com
+  # Bybit API
+  - DOMAIN,api.bybit.com
+  - DOMAIN,stream.bybit.com
+  # Kraken & Coinbase API
+  - DOMAIN,api.kraken.com
+  - DOMAIN-SUFFIX,coinbasecloud.net
+
+  # =========================================
+  # 5. Web3_Infra (链上浏览器、DeFi与钱包)
+  # =========================================
+  - DOMAIN-SUFFIX,metamask.io
+  - DOMAIN-SUFFIX,phantom.app
+  - DOMAIN-SUFFIX,ledger.com
+  - DOMAIN-SUFFIX,etherscan.io
+  - DOMAIN-SUFFIX,bscscan.com
+  - DOMAIN-SUFFIX,arbiscan.io
+  - DOMAIN-SUFFIX,polygonscan.com
+  - DOMAIN-SUFFIX,uniswap.org
+  - DOMAIN-SUFFIX,aave.com
+  - DOMAIN-SUFFIX,curve.fi
+  - DOMAIN-SUFFIX,compound.finance
+  - DOMAIN-SUFFIX,defillama.com
+
+  # =========================================
+  # 6. Trading_Tools (图表工具与流动性分析)
+  # =========================================
+  - DOMAIN-SUFFIX,tradingview.com
+  - DOMAIN-SUFFIX,tradingviewusercontent.com
+  - DOMAIN-SUFFIX,tradingviewcdn.com
+  - DOMAIN-SUFFIX,tradingviewassets.com
+  - DOMAIN-SUFFIX,charts3d.com
+  - DOMAIN-SUFFIX,tvcharts.com
+  - DOMAIN-SUFFIX,tradinglite.com
+  - DOMAIN-SUFFIX,coinglass.com
+  - DOMAIN-SUFFIX,glassnode.com
+  - DOMAIN-SUFFIX,dexscreener.com
+  - DOMAIN-SUFFIX,ctrader.com
+  - DOMAIN-SUFFIX,spotware.com
+  - DOMAIN-SUFFIX,metatrader4.com
+  - DOMAIN-SUFFIX,metatrader5.com
+  - DOMAIN-SUFFIX,mql5.com
+  - DOMAIN-SUFFIX,cqg.com
+  - DOMAIN-SUFFIX,js-account.com
+
+  # =========================================
+  # 7. Data_Options (宏观、传统数据与期权策略)
+  # =========================================
+  - DOMAIN-SUFFIX,cmegroup.com
+  - DOMAIN-SUFFIX,nyse.com
+  - DOMAIN-SUFFIX,nasdaqtrader.com
+  - DOMAIN-SUFFIX,optionstrat.com
+  - DOMAIN-SUFFIX,marketchameleon.com
+  - DOMAIN-SUFFIX,orats.com
+  - DOMAIN-SUFFIX,sec.gov
+  - DOMAIN-SUFFIX,finra.org
+  - DOMAIN-SUFFIX,bloomberg.com
+  - DOMAIN-SUFFIX,reuters.com
+  - DOMAIN-SUFFIX,wsj.com
+  - DOMAIN-SUFFIX,barrons.com
+  - DOMAIN-SUFFIX,investing.com
+  - DOMAIN-SUFFIX,finviz.com
+  - DOMAIN-SUFFIX,barchart.com
+  - DOMAIN-SUFFIX,seekingalpha.com
+  - DOMAIN-SUFFIX,marketwatch.com
+  - DOMAIN-SUFFIX,morningstar.com
+  - DOMAIN-SUFFIX,coinmarketcap.com
+  - DOMAIN-SUFFIX,coingecko.com
+  - DOMAIN-SUFFIX,stockanalysis.com
+  - DOMAIN-SUFFIX,companiesmarketcap.com
+  - DOMAIN-SUFFIX,macrotrends.net
+  - DOMAIN-SUFFIX,polygon.io
+  - DOMAIN-SUFFIX,alphavantage.co
+  - DOMAIN-SUFFIX,twelvedata.com
+  - DOMAIN-SUFFIX,financialmodelingprep.com
+  - DOMAIN-SUFFIX,quandl.com
+  - DOMAIN-SUFFIX,nasdaq.com
+  - DOMAIN-SUFFIX,macromicro.me
+  - DOMAIN,finance.yahoo.com
+
+  # =========================================
+  # 8. Alternative_Investments (另类投资与企业库)
+  # =========================================
+  - DOMAIN-SUFFIX,vanguard.com
+  - DOMAIN-SUFFIX,fidelity.com
+  - DOMAIN-SUFFIX,blackrock.com
+  - DOMAIN-SUFFIX,ishares.com
+  - DOMAIN-SUFFIX,spdrs.com
+  - DOMAIN-SUFFIX,ssga.com
+  - DOMAIN-SUFFIX,invesco.com
+  - DOMAIN-SUFFIX,globalxetfs.com
+  - DOMAIN-SUFFIX,pitchbook.com
+  - DOMAIN-SUFFIX,crunchbase.com
+
+  # =========================================
+  # 9. Community (垂直论坛与交流)
+  # =========================================
+  - DOMAIN-SUFFIX,dailyfx.com
+  - DOMAIN-SUFFIX,forexfactory.com
+  - DOMAIN-SUFFIX,babypips.com
+  - DOMAIN-SUFFIX,myfxbook.com
+  - DOMAIN-SUFFIX,myfxcm.com
+  - DOMAIN-SUFFIX,stocktwits.com
+  - DOMAIN-SUFFIX,xueqiu.com
