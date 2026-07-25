@@ -226,6 +226,9 @@ rule-providers:
   fin_class: { <<: *class, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_finance.yaml"}
   ai_class: {  <<: *class, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_ai.yaml" }
   pt_class: { <<: *class, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_pt.yaml"}
+  games_cn: { <<: *class, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/cn_games.yaml"}
+  mat_class: { <<: *class, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/global_matchmaking.yaml"}
+  pal_class: { <<: *class, url: "https://github.com/AdoreYL/rule/blob/main/geo/global_platforms.yaml"}
   proxy_class: { <<: *class, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_proxy.yaml"}
   youtube_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
   netflix_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"}
@@ -233,8 +236,6 @@ rule-providers:
   tiktok_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"}
   github_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
   telegram_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
-  steam_cn: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam@cn.mrs"}
-  games_cn: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games@cn.mrs"}
   apple_cn: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs"}
   paypal_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs"}
   onedrive_domain: { <<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs"}
