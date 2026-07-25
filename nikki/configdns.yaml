@@ -150,17 +150,20 @@ proxy-groups:
   - {name: 🌐 全部节点, type: select, include-all: true}
   - {name: 🍀 Google, type: select, <<: *pr}
   - {name: 🤖 AI, type: select, <<: *pr}
-  - {name: 🎮 Game_cn, type: select, <<: *pr}
   - {name: 🎥 YouTube, type: select, <<: *pr}
   - {name: 🎬 OTT, type: select, <<: *pr}
   - {name: 💳 Fin, type: select, <<: *pr}
+  - {name: 🪙 BTC, type: select, <<: *pr}
   - {name: ✈️ Speedtest, type: select, <<: *pr}
   - {name: 💶 PayPal, type: select, <<: *pr}
   - {name: 👨🏿‍💻 GitHub, type: select, <<: *pr}
   - {name: 📲 Telegram, type: select, <<: *pr}
+  - {name: 🎮 Game_cn, type: select, <<: *pr}
+  - {name: 🕹️ Game, type: select, <<: *pr}
+  - {name: 💻 游戏平台, type: select, <<: *pr}
+  - {name: 📟 PT, type: select, <<: *pr}
   - {name: 🪟 Microsoft, type: select, <<: *pr}
   - {name: 🐬 OneDrive, type: select, <<: *pr}
-  - {name: 📟 PT, type: select, <<: *pr}
   - {name: 💨 CF代理, type: select, include-all: true, filter: "(?=.*(?i)(CF))^(?!.*(JC|落地|SS)).*$"}
   - {name: 🏡 落地, type: select, include-all: true, filter: "(?=.*(?i)(SS|落地))^(?!.*(CF|JC|中转)).*$"}
   - {name: 🛩 中转, type: select, include-all: true, filter: "(?=.*(?i)(中转|LIG|AWS|CF))^(?!.*(JC|落地|CF)).*$"}
@@ -181,7 +184,7 @@ proxy-groups:
   - {name: 🎯 直连, type: select, proxies: [直连]}
   - {name: 🐟 漏网之鱼, type: select, proxies: [🚀 默认代理, 🎯 直连]}
 
-#🕊️🐸📢🎞️📹🛩️🏡🍃⭐✨🐤💧👨🏿‍💻🎵🕊🐠🎮✈️🚀🐱🐙🎧💳⚖️🧬🎵🚄📱💾🔍🌈💨📟🎬🔒🚂️  🇩🇪 🇹🇼 🇨🇦 🇷🇺 🇦🇺 🇮🇩 🇲🇾 🇻🇳
+#🕊️🐸📢🎞️📹🛩️🏡🍃⭐✨🐤💧👨🏿‍💻🎵🕊🐠🎮✈️🚀🐱🐙🎧💳🕹️💻🖱️⌨️⚖️🔋🎰🏎️🛌🏋️‍♂️🛒🎳🪙🏧🧾💰🏛️🧬🏦🎵🚄📱💾🔍🌈💨📟🎬🔒🚂️  🇩🇪 🇹🇼 🇨🇦 🇷🇺 🇦🇺 🇮🇩 🇲🇾 🇻🇳
 
 
 # 规则匹配
@@ -190,12 +193,14 @@ rules:
   - RULE-SET,private_ip,🎯 直连,no-resolve
   - RULE-SET,private_domain,🎯 直连
   - RULE-SET,fin_class,💳 Fin
+  - RULE-SET,btc_class,🪙 BTC
   - RULE-SET,pt_class,📟 PT
   - RULE-SET,ai_class,🤖 AI
   - RULE-SET,proxy_class,🚀 默认代理
   - RULE-SET,apple_cn,🎯 直连
-  - RULE-SET,steam_cn,🎮 Game_cn
   - RULE-SET,games_cn,🎮 Game_cn
+  - RULE-SET,mat_class,🕹️ Game
+  - RULE-SET,pal_class,💻 游戏平台
   - RULE-SET,cn_domain,🎯 直连
   - RULE-SET,github_domain,👨🏿‍💻 GitHub
   - RULE-SET,telegram_domain,📲 Telegram
@@ -237,6 +242,12 @@ rule-providers:
     format: yaml
     interval: 86400
     url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_finance.yaml"
+  btc_class:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_btc.yaml"
   ai_class:
     type: http
     behavior: classical
@@ -255,6 +266,24 @@ rule-providers:
     format: yaml
     interval: 86400
     url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_proxy.yaml"
+  games_cn:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/cn_games.yaml"
+  mat_class:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/global_matchmaking.yaml"
+  pal_class:
+    type: http
+    behavior: classical
+    format: yaml
+    interval: 86400
+    url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/global_platforms.yaml"
   youtube_domain:
     type: http
     behavior: domain
@@ -291,18 +320,6 @@ rule-providers:
     format: mrs
     interval: 86400
     url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"
-  steam_cn:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam@cn.mrs"
-  games_cn:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games@cn.mrs"
   apple_cn:
     type: http
     behavior: domain
