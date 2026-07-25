@@ -1,0 +1,28 @@
+payload:
+  # =========================================
+  # 1. Steam 平台
+  # =========================================
+  - DOMAIN-SUFFIX,steampowered.com
+  - DOMAIN-SUFFIX,steamcommunity.com
+  - DOMAIN-SUFFIX,steamgames.com
+  - DOMAIN-SUFFIX,steam-api.com
+  
+  # =========================================
+  # 2. 主机御三家网络 (PSN / Xbox / Nintendo)
+  # =========================================
+  - DOMAIN-SUFFIX,playstation.com
+  - DOMAIN-SUFFIX,playstation.net
+  - DOMAIN-SUFFIX,xboxlive.com
+  - DOMAIN-SUFFIX,xbox.com
+  - DOMAIN-SUFFIX,nintendo.net
+  - DOMAIN-SUFFIX,nintendo.com
+  - DOMAIN-SUFFIX,nintendo.co.jp
+  
+  # =========================================
+  # 3. 其他国际大厂平台 (EA / 战网国际 / Epic)
+  # =========================================
+  - DOMAIN-SUFFIX,ea.com
+  - DOMAIN-SUFFIX,origin.com
+  - DOMAIN-SUFFIX,epicgames.com
+  - DOMAIN-SUFFIX,battle.net
+  - DOMAIN-SUFFIX,blizzard.com

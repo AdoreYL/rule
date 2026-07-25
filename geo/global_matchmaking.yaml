@@ -1,0 +1,24 @@
+payload:
+  # =========================================
+  # 1. 拳头 (LoL国际服 / Valorant 瓦罗兰特)
+  # =========================================
+  - DOMAIN-SUFFIX,riotgames.com
+  - DOMAIN-SUFFIX,playvalorant.com
+  - DOMAIN-SUFFIX,leagueoflegends.com
+  
+  # =========================================
+  # 2. HoYoverse (原神/星铁/绝区零 国际服)
+  # =========================================
+  - DOMAIN-SUFFIX,hoyoverse.com
+  - DOMAIN-SUFFIX,hoyolab.com
+  - DOMAIN-SUFFIX,genshinimpact.com
+  - DOMAIN-SUFFIX,honkaistarrail.com
+  - DOMAIN-SUFFIX,zenlesszonezero.com
+  
+  # =========================================
+  # 3. 其他主流外服 (PUBG / 动视 / 独立游戏)
+  # =========================================
+  - DOMAIN-SUFFIX,pubg.com
+  - DOMAIN-SUFFIX,playbattlegrounds.com
+  - DOMAIN-SUFFIX,roblox.com
+  - DOMAIN-SUFFIX,minecraft.net

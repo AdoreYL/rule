@@ -1,0 +1,36 @@
+payload:
+  # =========================================
+  # 1. 腾讯游戏
+  # =========================================
+  - DOMAIN-SUFFIX,tencent-gcloud.com
+  - DOMAIN-SUFFIX,gcloudcs.com
+  - DOMAIN-SUFFIX,wegame.com.cn
+  - DOMAIN-SUFFIX,wegameplus.com
+  - DOMAIN-SUFFIX,leagueoflegends.cn # 英雄联盟国服
+  - DOMAIN-SUFFIX,lpl.com.cn
+  
+  # =========================================
+  # 2. 网易游戏
+  # =========================================
+  - DOMAIN-SUFFIX,163.com
+  - DOMAIN-SUFFIX,126.net
+  - DOMAIN-SUFFIX,netease.com
+  - DOMAIN-SUFFIX,blizzardgames.cn   # 暴雪国服(网易代理)
+  - DOMAIN-SUFFIX,battlenet.com.cn
+  
+  # =========================================
+  # 3. 米哈游国服与其他大厂
+  # =========================================
+  - DOMAIN-SUFFIX,mihoyo.com
+  - DOMAIN-SUFFIX,miyoushe.com
+  - DOMAIN-SUFFIX,yuanshen.com       # 原神国服专属
+  - DOMAIN-SUFFIX,hypergryph.com     # 明日方舟
+  - DOMAIN-SUFFIX,xoyo.com           # 西山居(剑网3)
+  - DOMAIN-SUFFIX,24entertainment.com # 永劫无间
+  
+  # =========================================
+  # 4. 完美世界电竞 (CS2国服 / Dota2国服)
+  # =========================================
+  - DOMAIN-SUFFIX,wmsj.cn
+  - DOMAIN-SUFFIX,csgo.com.cn
+  - DOMAIN-SUFFIX,dota2.com.cn
