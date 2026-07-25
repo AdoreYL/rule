@@ -1,0 +1,67 @@
+payload:
+  # =========================================
+  # Ultimate Crypto & Web3 List
+  # =========================================
+
+  # =========================================
+  # 1. Crypto_Exchange (加密货币主站)
+  # =========================================
+  - DOMAIN-SUFFIX,binance.com
+  - DOMAIN-SUFFIX,binance.us
+  - DOMAIN-SUFFIX,bybit.com
+  - DOMAIN-SUFFIX,okx.com
+  - DOMAIN-SUFFIX,bitget.com
+  - DOMAIN-SUFFIX,coinbase.com
+  - DOMAIN-SUFFIX,kraken.com
+  - DOMAIN-SUFFIX,kucoin.com
+  - DOMAIN-SUFFIX,mexc.com
+  - DOMAIN-SUFFIX,htx.com
+  - DOMAIN-SUFFIX,gate.io
+  - DOMAIN-SUFFIX,deribit.com
+
+  # =========================================
+  # 2. Quant_API (加密货币量化与 WS 行情专属接口)
+  # =========================================
+  # Binance API
+  - DOMAIN,api.binance.com
+  - DOMAIN,api1.binance.com
+  - DOMAIN,api2.binance.com
+  - DOMAIN,api3.binance.com
+  - DOMAIN,api4.binance.com
+  - DOMAIN-SUFFIX,binance.me
+  # OKX API
+  - DOMAIN,www.okx.com
+  - DOMAIN,api.okx.com
+  - DOMAIN,ws.okx.com
+  # Bybit API
+  - DOMAIN,api.bybit.com
+  - DOMAIN,stream.bybit.com
+  # Kraken & Coinbase API
+  - DOMAIN,api.kraken.com
+  - DOMAIN-SUFFIX,coinbasecloud.net
+
+  # =========================================
+  # 3. Web3_Infra (链上浏览器、DeFi与钱包)
+  # =========================================
+  - DOMAIN-SUFFIX,metamask.io
+  - DOMAIN-SUFFIX,phantom.app
+  - DOMAIN-SUFFIX,ledger.com
+  - DOMAIN-SUFFIX,etherscan.io
+  - DOMAIN-SUFFIX,bscscan.com
+  - DOMAIN-SUFFIX,arbiscan.io
+  - DOMAIN-SUFFIX,polygonscan.com
+  - DOMAIN-SUFFIX,uniswap.org
+  - DOMAIN-SUFFIX,aave.com
+  - DOMAIN-SUFFIX,curve.fi
+  - DOMAIN-SUFFIX,compound.finance
+  - DOMAIN-SUFFIX,defillama.com
+
+  # =========================================
+  # 4. Crypto_Data_Tools (加密数据与专门图表工具)
+  # =========================================
+  - DOMAIN-SUFFIX,tradinglite.com
+  - DOMAIN-SUFFIX,coinglass.com
+  - DOMAIN-SUFFIX,glassnode.com
+  - DOMAIN-SUFFIX,dexscreener.com
+  - DOMAIN-SUFFIX,coinmarketcap.com
+  - DOMAIN-SUFFIX,coingecko.com
