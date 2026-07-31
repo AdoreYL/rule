@@ -8,6 +8,7 @@ payload:
   - DOMAIN-SUFFIX,joeyblog.net
   - DOMAIN-SUFFIX,qichiyu.com
   - DOMAIN-SUFFIX,v2rayssr.com
+  - DOMAIN-SUFFIX,shlii.io
 
   # =========================================
   # 2. 国际开发与基础设施服务
