@@ -160,7 +160,7 @@ proxy-groups:
   - {name: 📟 PT, type: select, <<: *pr}
   - {name: 🪟 Microsoft, type: select, <<: *pr}
   - {name: 🐬 OneDrive, type: select, <<: *pr}
-  - {name: 💨 CF代理, type: select, include-all: true, filter: "(?=.*(?i)(CF))^(?!.*(JC|落地|SS)).*$"}
+  - {name: 💨 CF代理, type: select, include-all: true, filter: "(?=.*(?i)(CF|ED))^(?!.*(JC|落地|SS)).*$"}
   - {name: 🏡 落地, type: select, include-all: true, filter: "(?=.*(?i)(SS|落地))^(?!.*(CF|JC|中转)).*$"}
   - {name: ✨ 落地, type: select, include-all: true, filter: "(?=.*(?i)(SS|落地))^(?!.*(CF|JC|中转)).*$"}
   - {name: 🛩 中转, type: select, include-all: true, filter: "(?=.*(?i)(中转|LIG|AWS|CF|ED))^(?!.*(JC|落地)).*$"}
@@ -170,7 +170,7 @@ proxy-groups:
   - {name: 🇸🇬 狮城节点, type: select, include-all: true, filter: "(?=.*(?i)(新|sg|SG|新加坡|狮城))^(?!.*(JC|落地|CF)).*$"}
   - {name: 🇰🇷 韩国节点, type: select, include-all: true, filter: "(?=.*(?i)(韩|kr|KR|首尔|春川))^(?!.*(JC|落地|CF)).*$"}
   - {name: 🐱 Sub节点, type: select, include-all: true, filter: "(?=.*(?i)(RY|HX|HY|TUIC|ANT|ANR|VL|VM|TUN|SHT|NA))^(?!.*(JC|SS|落地|CF)).*$"}
-  - {name: ♻️ CF自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(?i)(CF))^(?!.*(JC|落地|SS)).*$"}
+  - {name: ♻️ CF自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(?i)(CF|ED))^(?!.*(JC|落地|SS)).*$"}
   - {name: ♻️ 香港自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(港|HK|香港|(?i)Hong))^((?!(JC|落地|CF|SS)).)*$"}
   - {name: ♻️ 日本自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(日|JP|大阪|东京|(?i)Japan))^((?!(JC|落地|CF|SS)).)*$" }
   - {name: ♻️ 美国自动, type: url-test, include-all: true, tolerance: 20, interval: 300, filter: "(?=.*(美|US|圣何塞|洛杉矶|(?i)America))^((?!(JC|落地|CF|SS)).)*$"}
