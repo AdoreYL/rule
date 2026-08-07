@@ -66,7 +66,7 @@ proxies:
 mixed-port: 7890
 allow-lan: true
 bind-address: "*"
-ipv6: false
+ipv6: true
 unified-delay: true
 tcp-concurrent: true
 log-level: warning
@@ -212,7 +212,7 @@ rules:
   - RULE-SET,paypal_domain,💶 PayPal
   - RULE-SET,onedrive_domain,🐬 OneDrive
   - RULE-SET,microsoft_domain,🪟 Microsoft
-  - RULE-SET,speedtest_domain,✈️ Speedtest
+  - RULE-SET,speedtest_domain,🏎️ Speedtest
   - RULE-SET,google_domain,🍀 Google
   - RULE-SET,gfw_domain,🚀 默认代理
   - RULE-SET,geolocation-!cn,🚀 默认代理
