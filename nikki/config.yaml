@@ -9,7 +9,7 @@ proxy-providers:
     interval: 86400
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
+      url: https://www.google.com/generate_204
       interval: 300
     proxy: 直连
   AirportASing:
@@ -18,7 +18,7 @@ proxy-providers:
     interval: 86400
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
+      url: https://www.google.com/generate_204
       interval: 300
     proxy: 直连
   Airport_Ahysteria:
@@ -27,7 +27,7 @@ proxy-providers:
     interval: 86400
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
+      url: https://www.google.com/generate_204
       interval: 300
     proxy: 直连
     override:
@@ -45,7 +45,7 @@ proxy-providers:
     interval: 86400
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
+      url: https://www.google.com/generate_204
       interval: 900
     proxy: 直连
   Airport落地:
@@ -54,7 +54,7 @@ proxy-providers:
     interval: 86400
     health-check:
       enable: true
-      url: https://www.gstatic.com/generate_204
+      url: https://www.google.com/generate_204
       interval: 300
     proxy: 直连
 
