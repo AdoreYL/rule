@@ -148,3 +148,10 @@ payload:
 
   # OpenAI Cloudflare CDN
   - DOMAIN,openai.com.cdn.cloudflare.net
+
+  # =========================================
+  # 10. Custom Self-hosted AI Services
+  # =========================================
+  - DOMAIN,api.gvvvg.com
+  - DOMAIN,new.gvvvg.com
+  - DOMAIN,cli.gvvvg.com
