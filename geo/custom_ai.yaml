@@ -152,6 +152,5 @@ payload:
   # =========================================
   # 10. Custom Self-hosted AI Services
   # =========================================
-  - DOMAIN,api.gvvvg.com
-  - DOMAIN,new.gvvvg.com
+  - DOMAIN,sub2api.gvvvg.com
   - DOMAIN,cli.gvvvg.com
