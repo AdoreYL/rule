@@ -125,3 +125,70 @@ payload:
   - DOMAIN-SUFFIX,myfxcm.com
   - DOMAIN-SUFFIX,stocktwits.com
   - DOMAIN-SUFFIX,xueqiu.com
+
+  # =========================================
+  # 7. Global_Payment_Wallets (海外支付平台、电子钱包与支付网关)
+  # =========================================
+  # PayPal
+  - DOMAIN-SUFFIX,paypal.com
+  - DOMAIN-SUFFIX,paypal.me
+  - DOMAIN-SUFFIX,paypalobjects.com
+  - DOMAIN-SUFFIX,paypal-communication.com
+
+  # Stripe (海外软件订阅/SaaS 常用收单核心)
+  - DOMAIN-SUFFIX,stripe.com
+  - DOMAIN-SUFFIX,stripe.network
+  - DOMAIN-SUFFIX,stripemedia.com
+  - DOMAIN-SUFFIX,stripecdn.com
+
+  # Adyen (全球头部聚合收单)
+  - DOMAIN-SUFFIX,adyen.com
+  - DOMAIN-SUFFIX,adyen.services
+
+  # Square / Block / Cash App
+  - DOMAIN-SUFFIX,squareup.com
+  - DOMAIN-SUFFIX,cash.app
+
+  # Paddle & 2Checkout (软件开发与 SaaS 出海商户常用)
+  - DOMAIN-SUFFIX,paddle.com
+  - DOMAIN-SUFFIX,paddleapi.com
+  - DOMAIN-SUFFIX,2checkout.com
+  - DOMAIN-SUFFIX,2c2p.com
+
+  # European Wallets (Skrill / Neteller / Paysafe / Klarna)
+  - DOMAIN-SUFFIX,skrill.com
+  - DOMAIN-SUFFIX,neteller.com
+  - DOMAIN-SUFFIX,paysafecard.com
+  - DOMAIN-SUFFIX,klarna.com
+  - DOMAIN-SUFFIX,klarnacdn.net
+
+  # Card Networks (卡组织防风控验证及 3DS 校验)
+  - DOMAIN-SUFFIX,visa.com
+  - DOMAIN-SUFFIX,mastercard.com
+  - DOMAIN-SUFFIX,americanexpress.com
+  - DOMAIN-SUFFIX,amex.com
+
+  # =========================================
+  # 8. CrossBorder_Cards_Neobanks (跨境出海银行、虚拟信用卡与转账服务)
+  # =========================================
+  # Wise (原 TransferWise)
+  - DOMAIN-SUFFIX,wise.com
+  - DOMAIN-SUFFIX,transferwise.com
+
+  # Revolut (欧洲头部数字新银行)
+  - DOMAIN-SUFFIX,revolut.com
+  - DOMAIN-SUFFIX,revolut.codes
+
+  # Payoneer (派安盈)
+  - DOMAIN-SUFFIX,payoneer.com
+
+  # US / Global Virtual Cards & Fintech (虚拟卡与跨境钱包平台)
+  - DOMAIN-SUFFIX,privacy.com
+  - DOMAIN-SUFFIX,vccpay.com
+  - DOMAIN-SUFFIX,nobepay.com
+  - DOMAIN-SUFFIX,dupay.one
+  - DOMAIN-SUFFIX,hypercard.bi
+  - DOMAIN-SUFFIX,airwallex.com
+  - DOMAIN-SUFFIX,remitly.com
+  - DOMAIN-SUFFIX,worldremit.com
+  - DOMAIN-SUFFIX,westernunion.com
