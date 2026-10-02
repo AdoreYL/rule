@@ -1,23 +1,161 @@
+# 文件名：custom_btc.yaml
+# 说明：自用加密货币与 Web3 规则集（整合 category-cryptocurrency 规则与量化 API）
 payload:
   # =========================================
-  # Ultimate Crypto & Web3 List
+  # 1. Crypto_Exchange (中心化交易所主站及官方镜像)
   # =========================================
-
-  # =========================================
-  # 1. Crypto_Exchange (加密货币主站)
-  # =========================================
+  # Binance (币安)
   - DOMAIN-SUFFIX,binance.com
   - DOMAIN-SUFFIX,binance.us
-  - DOMAIN-SUFFIX,bybit.com
+  - DOMAIN-SUFFIX,binance.co
+  - DOMAIN-SUFFIX,binance.cc
+  - DOMAIN-SUFFIX,binance.info
+  - DOMAIN-SUFFIX,binance.me
+  - DOMAIN-SUFFIX,binance.net
+  - DOMAIN-SUFFIX,binance.org
+  - DOMAIN-SUFFIX,binance.vision
+  - DOMAIN-SUFFIX,binance.cloud
+  - DOMAIN-SUFFIX,binance.charity
+  - DOMAIN-SUFFIX,binancecnt.com
+  - DOMAIN-SUFFIX,binanceapi.com
+  - DOMAIN-SUFFIX,binanceru.net
+  - DOMAIN-SUFFIX,bnbstatic.com
+  - DOMAIN-SUFFIX,bnbchain.org
+  - DOMAIN-SUFFIX,bntrace.com
+  - DOMAIN-SUFFIX,bsappapi.com
+  - DOMAIN-SUFFIX,bsappapi.cc
+  - DOMAIN-SUFFIX,bscdnweb.com
+  - DOMAIN-SUFFIX,nftstatic.com
+  - DOMAIN-SUFFIX,bmwweb.solutions
+  - DOMAIN-SUFFIX,bnappweb.black
+  # Binance 国内镜像/免翻域名
+  - DOMAIN-SUFFIX,binancezh.be
+  - DOMAIN-SUFFIX,binancezh.biz
+  - DOMAIN-SUFFIX,binancezh.cc
+  - DOMAIN-SUFFIX,binancezh.co
+  - DOMAIN-SUFFIX,binancezh.com
+  - DOMAIN-SUFFIX,binancezh.info
+  - DOMAIN-SUFFIX,binancezh.ink
+  - DOMAIN-SUFFIX,binancezh.kim
+  - DOMAIN-SUFFIX,binancezh.link
+  - DOMAIN-SUFFIX,binancezh.live
+  - DOMAIN-SUFFIX,binancezh.mobi
+  - DOMAIN-SUFFIX,binancezh.net
+  - DOMAIN-SUFFIX,binancezh.pro
+  - DOMAIN-SUFFIX,binancezh.sh
+  - DOMAIN-SUFFIX,binancezh.top
+  - DOMAIN-SUFFIX,saasexch.cc
+  - DOMAIN-SUFFIX,saasexch.co
+  - DOMAIN-SUFFIX,saasexch.com
+  - DOMAIN-SUFFIX,saasexch.info
+  - DOMAIN-SUFFIX,saasexch.io
+
+  # OKX (欧易) & OKLink
   - DOMAIN-SUFFIX,okx.com
-  - DOMAIN-SUFFIX,bitget.com
-  - DOMAIN-SUFFIX,coinbase.com
-  - DOMAIN-SUFFIX,kraken.com
-  - DOMAIN-SUFFIX,kucoin.com
-  - DOMAIN-SUFFIX,mexc.com
+  - DOMAIN-SUFFIX,okex.com
+  - DOMAIN-SUFFIX,okx.ac
+  - DOMAIN-SUFFIX,okx.cab
+  - DOMAIN-SUFFIX,okx-dns.com
+  - DOMAIN-SUFFIX,okx-dns1.com
+  - DOMAIN-SUFFIX,okx-dns2.com
+  - DOMAIN-SUFFIX,xlayer.tech
+  - DOMAIN-SUFFIX,oklink.com
+  - DOMAIN-SUFFIX,okx.com.cdn.cloudflare.net
+
+  # Bybit
+  - DOMAIN-SUFFIX,bybit.com
+  - DOMAIN-SUFFIX,bybit.biz
+  - DOMAIN-SUFFIX,bybit.cloud
+  - DOMAIN-SUFFIX,bybitglobal.com
+  - DOMAIN-SUFFIX,bybit-global.com
+  - DOMAIN-SUFFIX,byapis.com
+  - DOMAIN-SUFFIX,bycsi.com
+  - DOMAIN-SUFFIX,bycbe.com
+  - DOMAIN-SUFFIX,bytick.com
+  - DOMAIN-SUFFIX,byapps.net
+  - DOMAIN-SUFFIX,byabcde.com
+  - DOMAIN-SUFFIX,bybdc6.com
+  - DOMAIN-SUFFIX,byd3c3.com
+  - DOMAIN-SUFFIX,bymj.io
+  - DOMAIN,bybit-exchange.github.io
+  - DOMAIN,bybit.ada.support
+
+  # HTX / Huobi (火币)
   - DOMAIN-SUFFIX,htx.com
+  - DOMAIN-SUFFIX,huobi.com
+  - DOMAIN-SUFFIX,huobi.me
+  - DOMAIN-SUFFIX,huobi.pro
+  - DOMAIN-SUFFIX,huobi.sc
+  - DOMAIN-SUFFIX,huobiasia.vip
+  - DOMAIN-SUFFIX,huobigroup.com
+  - DOMAIN-SUFFIX,huobitoken.com
+  - DOMAIN-SUFFIX,hbabit.com
+  - DOMAIN-SUFFIX,hbfile.net
+
+  # Gate.io (芝麻开门)
   - DOMAIN-SUFFIX,gate.io
+  - DOMAIN-SUFFIX,gate.com
+  - DOMAIN-SUFFIX,gate.tv
+  - DOMAIN-SUFFIX,gateio.live
+  - DOMAIN-SUFFIX,gateio.services
+  - DOMAIN-SUFFIX,gateapi.io
+  - DOMAIN-SUFFIX,gatedata.org
+  - DOMAIN-SUFFIX,gateimg.com
+
+  # Bitget
+  - DOMAIN-SUFFIX,bitget.com
+
+  # Coinbase
+  - DOMAIN-SUFFIX,coinbase.com
+  - DOMAIN-SUFFIX,coinbasecloud.net
+
+  # Kraken
+  - DOMAIN-SUFFIX,kraken.com
+  - DOMAIN-SUFFIX,kraken.onl
+
+  # KuCoin (库币)
+  - DOMAIN-SUFFIX,kucoin.com
+  - DOMAIN-SUFFIX,kucoin.plus
+
+  # MEXC (抹茶)
+  - DOMAIN-SUFFIX,mexc.com
+  - DOMAIN-SUFFIX,mexc.co
+  - DOMAIN-SUFFIX,mexcsensors.com
+
+  # Deribit (期权交易所)
   - DOMAIN-SUFFIX,deribit.com
+  - DOMAIN,deribit.cdn.prismic.io
+
+  # 其他知名交易所 (Bitfinex / Bitstamp / BitMEX / Gemini / BingX 等)
+  - DOMAIN-SUFFIX,bitfinex.com
+  - DOMAIN-SUFFIX,bitstamp.net
+  - DOMAIN-SUFFIX,bitmex.com
+  - DOMAIN-SUFFIX,bittrex.com
+  - DOMAIN-SUFFIX,bingx.com
+  - DOMAIN-SUFFIX,gemini.com
+  - DOMAIN-SUFFIX,crypto.com
+  - DOMAIN-SUFFIX,cex.io
+  - DOMAIN-SUFFIX,osl.com
+  - DOMAIN-SUFFIX,paxful.com
+  - DOMAIN-SUFFIX,localbitcoins.com
+  - DOMAIN-SUFFIX,localbitcoinschain.com
+  - DOMAIN-SUFFIX,bitbank.cc
+  - DOMAIN-SUFFIX,bitflyer.com
+  - DOMAIN-SUFFIX,bitflyer.jp
+  - DOMAIN-SUFFIX,btcbox.co.jp
+  - DOMAIN-SUFFIX,coinone.co.kr
+  - DOMAIN-SUFFIX,coinonecore.com
+  - DOMAIN-SUFFIX,coinonecorp.com
+  - DOMAIN-SUFFIX,zb.com
+  - DOMAIN-SUFFIX,zb.io
+  - DOMAIN-SUFFIX,zb.app
+  - DOMAIN-SUFFIX,zb.live
+  - DOMAIN-SUFFIX,asproex.com
+  - DOMAIN-SUFFIX,asproexapi.com
+  - DOMAIN-SUFFIX,bisq.io
+  - DOMAIN-SUFFIX,bisq.network
+  - DOMAIN-SUFFIX,bitsquare.io
+  - DOMAIN-SUFFIX,bitquick.co
 
   # =========================================
   # 2. Quant_API (加密货币量化与 WS 行情专属接口)
@@ -28,7 +166,6 @@ payload:
   - DOMAIN,api2.binance.com
   - DOMAIN,api3.binance.com
   - DOMAIN,api4.binance.com
-  - DOMAIN-SUFFIX,binance.me
   # OKX API
   - DOMAIN,www.okx.com
   - DOMAIN,api.okx.com
@@ -36,28 +173,98 @@ payload:
   # Bybit API
   - DOMAIN,api.bybit.com
   - DOMAIN,stream.bybit.com
-  # Kraken & Coinbase API
+  # Kraken API
   - DOMAIN,api.kraken.com
-  - DOMAIN-SUFFIX,coinbasecloud.net
 
   # =========================================
-  # 3. Web3_Infra (链上浏览器、DeFi与钱包)
+  # 3. Decentralized_Exchange_DeFi (去中心化交易与 DeFi 协议)
   # =========================================
+  # DEX 交易平台
+  - DOMAIN-SUFFIX,uniswap.org
+  - DOMAIN-SUFFIX,1inch.io
+  - DOMAIN-SUFFIX,curve.fi
+  - DOMAIN-SUFFIX,aave.com
+  - DOMAIN-SUFFIX,compound.finance
+  - DOMAIN-SUFFIX,dydx.exchange
+  - DOMAIN-SUFFIX,hyperliquid.xyz
+  - DOMAIN-SUFFIX,lighter.exchange
+  - DOMAIN-SUFFIX,lighter.xyz
+  - DOMAIN-SUFFIX,zklighter.elliot.ai
+  - DOMAIN-SUFFIX,hashflow.com
+  - DOMAIN-SUFFIX,clearpool.finance
+  - DOMAIN-SUFFIX,maple.finance
+  - DOMAIN-SUFFIX,truefi.io
+  - DOMAIN-SUFFIX,merkl.xyz
+  - DOMAIN-SUFFIX,metalpha.finance
+  - DOMAIN-SUFFIX,solidifi.app
+  - DOMAIN-SUFFIX,stealthex.io
+  - DOMAIN-SUFFIX,wintermute.com
+  - DOMAIN-SUFFIX,cyberx.com
+  - DOMAIN-SUFFIX,opensea.io
+
+  # =========================================
+  # 4. Web3_Wallets_Hardware (去中心化钱包与硬件钱包)
+  # =========================================
+  # 软件/插件钱包
   - DOMAIN-SUFFIX,metamask.io
   - DOMAIN-SUFFIX,phantom.app
+  - DOMAIN-SUFFIX,trustwallet.com
+  - DOMAIN-SUFFIX,unisat.io
+  - DOMAIN-SUFFIX,walletconnect.com
+  - DOMAIN-SUFFIX,walletconnect.org
+  - DOMAIN-SUFFIX,web3modal.org
+  # 硬件冷钱包 (Ledger / Trezor / OneKey / SafePal)
   - DOMAIN-SUFFIX,ledger.com
+  - DOMAIN-SUFFIX,trezor.io
+  - DOMAIN-SUFFIX,satoshilabs.com
+  - DOMAIN-SUFFIX,invity.io
+  - DOMAIN-SUFFIX,onekey.so
+  - DOMAIN-SUFFIX,onekeycn.com
+  - DOMAIN-SUFFIX,onekey-asset.com
+  - DOMAIN,onekey.zendesk.com
+  - DOMAIN-SUFFIX,safepal.com
+  - DOMAIN-SUFFIX,isafepal.com
+
+  # =========================================
+  # 5. Blockchain_Explorers_Infra (区块链主网、L2、RPC 与区块浏览器)
+  # =========================================
+  # 公链官方
+  - DOMAIN-SUFFIX,bitcoin.org
+  - DOMAIN-SUFFIX,bitcoincore.org
+  - DOMAIN-SUFFIX,ethereum.org
+  - DOMAIN-SUFFIX,ethereum.foundation
+  - DOMAIN-SUFFIX,devcon.org
+  - DOMAIN-SUFFIX,dogecoin.com
+  - DOMAIN-SUFFIX,litecoin.org
+  - DOMAIN-SUFFIX,ripple.com
+  - DOMAIN-SUFFIX,fantom.foundation
+  - DOMAIN-SUFFIX,fantom.network
+  - DOMAIN-SUFFIX,flare.network
+  - DOMAIN-SUFFIX,coredao.org
+  - DOMAIN-SUFFIX,taiko.xyz
+  - DOMAIN-SUFFIX,base.org
+  - DOMAIN-SUFFIX,blast.io
+  - DOMAIN-SUFFIX,bitlayer.org
+  - DOMAIN-SUFFIX,megaeth.com
+  - DOMAIN-SUFFIX,rsk.co
+  - DOMAIN-SUFFIX,oasis.io
+  # 区块浏览器
   - DOMAIN-SUFFIX,etherscan.io
   - DOMAIN-SUFFIX,bscscan.com
   - DOMAIN-SUFFIX,arbiscan.io
   - DOMAIN-SUFFIX,polygonscan.com
-  - DOMAIN-SUFFIX,uniswap.org
-  - DOMAIN-SUFFIX,aave.com
-  - DOMAIN-SUFFIX,curve.fi
-  - DOMAIN-SUFFIX,compound.finance
-  - DOMAIN-SUFFIX,defillama.com
+  - DOMAIN-SUFFIX,blockchain.com
+  # 开发者 RPC 与节点设施
+  - DOMAIN-SUFFIX,infura.io
+  - DOMAIN-SUFFIX,drpc.org
+  - DOMAIN-SUFFIX,nodereal.io
+  - DOMAIN-SUFFIX,blockfrost.io
+  - DOMAIN-SUFFIX,onfinality.io
+  - DOMAIN-SUFFIX,thirdweb.com
+  - DOMAIN-SUFFIX,chainid.network
 
   # =========================================
-  # 4. Crypto_Data_Tools (加密数据与专门图表工具)
+  # 6. Crypto_Data_Tools_Analytics (加密数据分析、行情图表与资讯)
   # =========================================
   - DOMAIN-SUFFIX,tradinglite.com
   - DOMAIN-SUFFIX,coinglass.com
@@ -65,3 +272,58 @@ payload:
   - DOMAIN-SUFFIX,dexscreener.com
   - DOMAIN-SUFFIX,coinmarketcap.com
   - DOMAIN-SUFFIX,coingecko.com
+  - DOMAIN-SUFFIX,coinalyze.net
+  - DOMAIN-SUFFIX,fundingrates.xyz
+  - DOMAIN-SUFFIX,cryptocompare.com
+  - DOMAIN-SUFFIX,defillama.com
+  - DOMAIN-SUFFIX,debank.com
+  - DOMAIN-SUFFIX,zapper.fi
+  - DOMAIN-SUFFIX,gmgn.ai
+  - DOMAIN-SUFFIX,polymarket.com
+  - DOMAIN-SUFFIX,mytokenapi.com
+  - DOMAIN-SUFFIX,coinmap.org
+  - DOMAIN-SUFFIX,coindesk.com
+  - DOMAIN-SUFFIX,theblock.co
+
+  # =========================================
+  # 7. Payment_Card_OTC (加密支付卡、借记卡、出入金与网关)
+  # =========================================
+  # RedotPay
+  - DOMAIN-SUFFIX,redotpay.com
+  - DOMAIN-SUFFIX,redotpay.zendesk.com
+  # StraitsX
+  - DOMAIN-SUFFIX,straitsx.com
+  - DOMAIN,straitsx-826709081262441084-b790f87a2ae6fd417434295.freshchat.com
+  # Fiat24 / Nexo / BestChange
+  - DOMAIN-SUFFIX,fiat24.com
+  - DOMAIN-SUFFIX,nexo.com
+  - DOMAIN-SUFFIX,nexo.io
+  - DOMAIN-SUFFIX,bestchange.com
+  - DOMAIN-SUFFIX,bestchange.net
+  - DOMAIN-SUFFIX,bestchange.ru
+  - DOMAIN-SUFFIX,coingate.com
+  - DOMAIN-SUFFIX,cryptomus.com
+  - DOMAIN-SUFFIX,guardarian.com
+  - DOMAIN-SUFFIX,payget.pro
+  - DOMAIN-SUFFIX,platov.co
+  - DOMAIN-SUFFIX,ramon.cash
+  - DOMAIN-SUFFIX,ramon.money
+  - DOMAIN-SUFFIX,delets.online
+  - DOMAIN-SUFFIX,onemoment.cc
+
+  # =========================================
+  # 8. Web3_Ecosystem_Other (去中心化网络、加密安全与技术支撑)
+  # =========================================
+  - DOMAIN-SUFFIX,wynd.network
+  - DOMAIN-SUFFIX,wyndlabs.ai
+  - DOMAIN-SUFFIX,wisecoin.com
+  - DOMAIN-SUFFIX,wiseid.com
+  - DOMAIN-SUFFIX,wisekey.com
+  - DOMAIN-SUFFIX,wisekey.com.hk
+  # CDN、统计上报与客户支持服务
+  - DOMAIN,d3r7nsslvs6aaf.cloudfront.net
+  - DOMAIN,zftksc.cdn-settings.appsflyersdk.com
+  - DOMAIN,zftksc.launches.appsflyersdk.com
+  - DOMAIN-SUFFIX,xhpjc6-cdn-settings.appsflyersdk.com
+  - DOMAIN-SUFFIX,pod-15-sunco-ws.zendesk.com
+  - DOMAIN-SUFFIX,rp-static-apne1.s3.ap-northeast-1.amazonaws.com
