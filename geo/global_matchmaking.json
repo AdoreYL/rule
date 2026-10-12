@@ -1,0 +1,21 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "riotgames.com",
+        "playvalorant.com",
+        "leagueoflegends.com",
+        "hoyoverse.com",
+        "hoyolab.com",
+        "genshinimpact.com",
+        "honkaistarrail.com",
+        "zenlesszonezero.com",
+        "pubg.com",
+        "playbattlegrounds.com",
+        "roblox.com",
+        "minecraft.net"
+      ]
+    }
+  ]
+}
