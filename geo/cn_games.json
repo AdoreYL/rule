@@ -1,0 +1,29 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "tencent-gcloud.com",
+        "gcloudcs.com",
+        "wegame.com.cn",
+        "wegameplus.com",
+        "leagueoflegends.cn",
+        "lpl.com.cn",
+        "163.com",
+        "126.net",
+        "netease.com",
+        "blizzardgames.cn",
+        "battlenet.com.cn",
+        "mihoyo.com",
+        "miyoushe.com",
+        "yuanshen.com",
+        "hypergryph.com",
+        "xoyo.com",
+        "24entertainment.com",
+        "wmsj.cn",
+        "csgo.com.cn",
+        "dota2.com.cn"
+      ]
+    }
+  ]
+}
