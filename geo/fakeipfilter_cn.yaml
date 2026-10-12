@@ -1,0 +1,16 @@
+payload:
+  - DOMAIN-SUFFIX,lan
+  - DOMAIN-SUFFIX,local
+  - DOMAIN-SUFFIX,home.arpa
+  - DOMAIN-SUFFIX,router.asus.com
+  - DOMAIN-SUFFIX,miwifi.com
+  - DOMAIN-SUFFIX,tplogin.cn
+  - DOMAIN-SUFFIX,tendawifi.com
+  - DOMAIN-SUFFIX,plog.hiwifi.com
+  - DOMAIN-SUFFIX,leike.cc
+  - DOMAIN-SUFFIX,zte.home
+  - DOMAIN-SUFFIX,ntp.aliyun.com
+  - DOMAIN-SUFFIX,time.pool.aliyun.com
+  - DOMAIN-SUFFIX,time.apple.com
+  - DOMAIN-SUFFIX,market.xiaomi.com
+  - DOMAIN-SUFFIX,mijia.com
