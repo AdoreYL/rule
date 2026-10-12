@@ -1,0 +1,26 @@
+{
+  "version": 3,
+  "rules": [
+    {
+      "domain_suffix": [
+        "dewx.top",
+        "hjd2048.com",
+        "joeyblog.net",
+        "qichiyu.com",
+        "v2rayssr.com",
+        "shlii.io",
+        "docker.com",
+        "googleusercontent.com",
+        "dash.cloudflare.com",
+        "cloudflare-dns.com",
+        "dns.google",
+        "dns.quad9.net",
+        "dns.umbrella.com",
+        "doh.dns.sb",
+        "doh.opendns.com",
+        "dot.sb",
+        "hk-hkg.doh.sb"
+      ]
+    }
+  ]
+}
