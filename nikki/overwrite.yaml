@@ -11,7 +11,7 @@ proxies:
 mixed-port: 7890
 allow-lan: true
 bind-address: "*"
-ipv6: true # 允许内核建立 IPv6 套接字，支持纯 IPv6 落地节点与双栈中转
+ipv6: true
 unified-delay: true
 tcp-concurrent: true
 log-level: info
@@ -58,7 +58,7 @@ tun:
   auto-redirect: true
   auto-detect-interface: true
 
-# DNS 模块 (防泄露 + 双检分流 + 纯 IP DoH 防劫持 + 双栈监听)
+# DNS 模块
 dns:
   enable: true
   prefer-h3: true
