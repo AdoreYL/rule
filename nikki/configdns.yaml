@@ -64,10 +64,10 @@ proxies:
 mixed-port: 7890
 allow-lan: true
 bind-address: "*"
-ipv6: false # 关闭IPv6防止运营商双栈绕过TUN或导致DNS旁路泄露
+ipv6: true # 关闭IPv6防止运营商双栈绕过TUN或导致DNS旁路泄露
 unified-delay: true
 tcp-concurrent: true
-log-level: warning
+log-level: info
 keep-alive-idle: 600
 keep-alive-interval: 15
 profile:
