@@ -63,36 +63,31 @@ dns:
   enable: true
   prefer-h3: true
   cache-algorithm: arc
-  listen: ":::1053" # 同时监听 IPv4 与 IPv6 的 1053 端口，配合防火墙劫持
-  ipv6: false       # 仅对局域网下发 IPv4 Fake-IP，阻断 AAAA 旁路直连泄露
+  listen: ":::1053"
+  ipv6: false
   respect-rules: false
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.0/16
   fake-ip-filter-mode: blacklist
-  # 国内生态直连解析，其余境外域名全部下发 Fake-IP
+  fake-ip-ttl: 1
   fake-ip-filter:
     - "rule-set:fakeipfilter_domain"
     - "rule-set:cn_domain"
     - "rule-set:apple_cn"
     - "rule-set:private_domain"
-  # 引导解析服务器：仅在内核冷启动时作为纯 IP 兜底
   default-nameserver:
     - 223.5.5.5
     - 119.29.29.29
-  # 节点服务器域名解析：采用纯 IP DoH，杜绝运营商对节点 IP 的篡改与投毒
   proxy-server-nameserver:
     - https://223.5.5.5/dns-query
     - https://1.12.12.12/dns-query
-  # 直连域名默认解析：全量走国内 DoH 加密
   direct-nameserver:
     - https://223.5.5.5/dns-query
     - https://1.12.12.12/dns-query
-  # 精确分流策略：国内生态指定阿里与腾讯 DoH
   nameserver-policy:
     "rule-set:cn_domain,apple_cn,private_domain":
-      - https://223.5.5.5/dns-query
-      - https://1.12.12.12/dns-query
-  # 境外与未匹配域名：经由代理链路发送至 Google DoH，杜绝境内泄露与污染
+      - "https://223.5.5.5/dns-query#disable-qtype-65=true"
+      - "https://1.12.12.12/dns-query#disable-qtype-65=true"
   nameserver:
     - "https://8.8.8.8/dns-query#🚀 默认代理"
   
