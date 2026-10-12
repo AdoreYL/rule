@@ -110,6 +110,7 @@ tun:
   auto-redirect: false
   auto-detect-interface: false
 
+# DNS 模块 (防泄露 + 全链路 DoH 防劫持 + 双栈监听)
 dns:
   enable: true
   prefer-h3: true
