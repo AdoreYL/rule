@@ -227,190 +227,46 @@ rules:
   - MATCH,🐟 漏网之鱼
 
 # 规则集定义
+rule-anchor:
+  domain: &domain {type: http, interval: 86400, behavior: domain, format: mrs}
+  ip: &ip {type: http, interval: 86400, behavior: ipcidr, format: mrs}
+  custom_yaml: &custom_yaml {type: http, interval: 86400, behavior: classical, format: yaml}
+
+# 规则集全部改用单行继承写法
 rule-providers:
-  fakeipfilter_domain:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/fakeip-filter.mrs"
-  private_domain:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"
-  fin_class:
-    type: http
-    behavior: classical
-    format: yaml
-    interval: 86400
-    url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_finance.yaml"
-  btc_class:
-    type: http
-    behavior: classical
-    format: yaml
-    interval: 86400
-    url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_btc.yaml"
-  ai_class:
-    type: http
-    behavior: classical
-    format: yaml
-    interval: 86400
-    url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_ai.yaml"
-  pt_class:
-    type: http
-    behavior: classical
-    format: yaml
-    interval: 86400
-    url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_pt.yaml"
-  proxy_class:
-    type: http
-    behavior: classical
-    format: yaml
-    interval: 86400
-    url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_proxy.yaml"
-  games_cn:
-    type: http
-    behavior: classical
-    format: yaml
-    interval: 86400
-    url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/cn_games.yaml"
-  mat_class:
-    type: http
-    behavior: classical
-    format: yaml
-    interval: 86400
-    url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/global_matchmaking.yaml"
-  pal_class:
-    type: http
-    behavior: classical
-    format: yaml
-    interval: 86400
-    url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/global_platforms.yaml"
-  youtube_domain:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"
-  netflix_domain:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"
-  instagram_domain:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/instagram.mrs"
-  tiktok_domain:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"
-  github_domain:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"
-  telegram_domain:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"
-  apple_cn:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs"
-  paypal_domain:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs"
-  onedrive_domain:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs"
-  microsoft_domain:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"
-  speedtest_domain:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ookla-speedtest.mrs"
-  google_domain:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"
-  gfw_domain:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gfw.mrs"
-  geolocation-!cn:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"
-  cn_domain:
-    type: http
-    behavior: domain
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"
-  private_ip:
-    type: http
-    behavior: ipcidr
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs"
-  netflix_ip:
-    type: http
-    behavior: ipcidr
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"
-  apple_ip:
-    type: http
-    behavior: ipcidr
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geoip/apple.mrs"
-  telegram_ip:
-    type: http
-    behavior: ipcidr
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"
-  google_ip:
-    type: http
-    behavior: ipcidr
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"
-  cn_ip:
-    type: http
-    behavior: ipcidr
-    format: mrs
-    interval: 86400
-    url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"
+  # 自定义 Classical 规则集
+  fin_class: {<<: *custom_yaml, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_finance.yaml"}
+  btc_class: {<<: *custom_yaml, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_btc.yaml"}
+  ai_class: {<<: *custom_yaml, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_ai.yaml"}
+  pt_class: {<<: *custom_yaml, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_pt.yaml"}
+  proxy_class: {<<: *custom_yaml, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_proxy.yaml"}
+  games_cn: {<<: *custom_yaml, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/cn_games.yaml"}
+  mat_class: {<<: *custom_yaml, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/global_matchmaking.yaml"}
+  pal_class: {<<: *custom_yaml, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/global_platforms.yaml"}
+
+  # MRS 域名规则集
+  fakeipfilter_domain: {<<: *domain, url: "https://raw.githubusercontent.com/wwqgtxx/clash-rules/release/fakeip-filter.mrs"}
+  private_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/private.mrs"}
+  youtube_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/youtube.mrs"}
+  netflix_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/netflix.mrs"}
+  instagram_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/instagram.mrs"}
+  tiktok_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs"}
+  github_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/github.mrs"}
+  telegram_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs"}
+  apple_cn: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple-cn.mrs"}
+  paypal_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs"}
+  onedrive_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/onedrive.mrs"}
+  microsoft_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/microsoft.mrs"}
+  speedtest_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ookla-speedtest.mrs"}
+  google_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/google.mrs"}
+  gfw_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/gfw.mrs"}
+  geolocation-!cn: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs"}
+  cn_domain: {<<: *domain, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs"}
+
+  # MRS IP 规则集
+  private_ip: {<<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/private.mrs"}
+  netflix_ip: {<<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/netflix.mrs"}
+  apple_ip: {<<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo-lite/geoip/apple.mrs"}
+  telegram_ip: {<<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/telegram.mrs"}
+  google_ip: {<<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/google.mrs"}
+  cn_ip: {<<: *ip, url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs"}
