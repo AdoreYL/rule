@@ -241,8 +241,8 @@ rule-anchor:
 # 规则集全部改用单行继承写法
 rule-providers:
   # Fake-IP 专用排除列表（文本格式）
-  fakeipfilter_cn: {<<: *domain_text, url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/fakeipfilter-cn.list"}
-  fakeipfilter_!cn: {<<: *domain_text, url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/fakeipfilter-!cn.list"}
+  fakeipfilter_cn: {<<: *domain_text, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/fakeipfilter_cn.yaml"}
+  fakeipfilter_!cn: {<<: *domain_text, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/fakeipfilter_!cn.yaml"}
   # 自定义 Classical 规则集
   fin_class: {<<: *custom_yaml, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_finance.yaml"}
   btc_class: {<<: *custom_yaml, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_btc.yaml"}
