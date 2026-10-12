@@ -1,0 +1,68 @@
+payload:
+  # =========================================
+  # 域名完全匹配 (DOMAIN)
+  # =========================================
+  - DOMAIN,cable.auth.com
+  - DOMAIN,network-test.debian.org
+  - DOMAIN,detectportal.firefox.com
+  - DOMAIN,resolver1.opendns.com
+  - DOMAIN,global.turn.twilio.com
+  - DOMAIN,global.stun.twilio.com
+  - DOMAIN,injections.adguard.org
+  - DOMAIN,local.adguard.org
+  - DOMAIN,proxy.golang.org
+  - DOMAIN,shark007.net
+  - DOMAIN,time-ios.apple.com
+  - DOMAIN,pool.ntp.org
+  - DOMAIN,api-jooxtt.sanook.com
+  - DOMAIN,api.joox.com
+  - DOMAIN,joox.com
+  - DOMAIN,msftconnecttest.com
+  - DOMAIN,msftncsi.com
+  - DOMAIN,srv.nintendo.net
+  - DOMAIN,cdn.nintendo.net
+  - DOMAIN,stun.playstation.net
+  - DOMAIN,xnotify.xboxlive.com
+  - DOMAIN,battle.net
+  - DOMAIN,wargaming.net
+  - DOMAIN,steamcontent.com
+  - DOMAIN,heartbeat.belkin.com
+  - DOMAIN,lens.l.google.com
+  - DOMAIN,stun.l.google.com
+  - DOMAIN,na.b.g-tun.com
+  - DOMAIN,nflxvideo.net
+  - DOMAIN,media.dssott.com
+  - DOMAIN,pub.3gppnetwork.org
+
+  # =========================================
+  # 域名后缀匹配 (DOMAIN-SUFFIX)
+  # =========================================
+  - DOMAIN-SUFFIX,pool.ntp.org
+  - DOMAIN-SUFFIX,msftconnecttest.com
+  - DOMAIN-SUFFIX,msftncsi.com
+  - DOMAIN-SUFFIX,srv.nintendo.net
+  - DOMAIN-SUFFIX,cdn.nintendo.net
+  - DOMAIN-SUFFIX,stun.playstation.net
+  - DOMAIN-SUFFIX,battle.net
+  - DOMAIN-SUFFIX,wargaming.net
+  - DOMAIN-SUFFIX,steamcontent.com
+  - DOMAIN-SUFFIX,nflxvideo.net
+  - DOMAIN-SUFFIX,media.dssott.com
+  - DOMAIN-SUFFIX,pub.3gppnetwork.org
+
+  # =========================================
+  # 正则匹配 (DOMAIN-REGEX)
+  # =========================================
+  - DOMAIN-REGEX,^time\.[^.]+\.com$
+  - DOMAIN-REGEX,^time\.[^.]+\.gov$
+  - DOMAIN-REGEX,^time\.[^.]+\.apple\.com$
+  - DOMAIN-REGEX,^time[1-7]\.[^.]+\.com$
+  - DOMAIN-REGEX,^ntp[1-7]?\.[^.]+\.com$
+  - DOMAIN-REGEX,^(.+\.)?stun\.[^.]+\.[^.]+$
+  - DOMAIN-REGEX,^stun\.[^.]+\.[^.]+$
+  - DOMAIN-REGEX,^[^.]+\.n\.n\.srv\.nintendo\.net$
+  - DOMAIN-REGEX,^xbox\.[^.]+\.[^.]+\.microsoft\.com$
+  - DOMAIN-REGEX,^[^.]+\.[^.]+\.xboxlive\.com$
+  - DOMAIN-REGEX,^[^.]+\.square\-enix\.com$
+  - DOMAIN-REGEX,^[^.]+\.finalfantasyxiv\.com$
+  - DOMAIN-REGEX,^[^.]+\.linksys(smartwifi)?\.com$
