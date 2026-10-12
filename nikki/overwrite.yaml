@@ -58,7 +58,7 @@ tun:
   auto-redirect: true
   auto-detect-interface: true
 
-# DNS 模块 (防泄露 + 全链路 DoH 防劫持 + 双栈监听)
+# DNS 模块 (防泄露 + 双检分流 + 纯 IP DoH 防劫持 + 双栈监听)
 dns:
   enable: true
   prefer-h3: true
@@ -71,9 +71,11 @@ dns:
   fake-ip-filter-mode: blacklist
   fake-ip-ttl: 1
   fake-ip-filter:
-    - "rule-set:fakeipfilter_domain"
+    - "rule-set:fakeipfilter_cn"
+    - "rule-set:fakeipfilter_!cn"
     - "rule-set:cn_domain"
     - "rule-set:apple_cn"
+    - "rule-set:microsoft_domain"
     - "rule-set:private_domain"
   default-nameserver:
     - 223.5.5.5
@@ -85,11 +87,18 @@ dns:
     - https://223.5.5.5/dns-query
     - https://1.12.12.12/dns-query
   nameserver-policy:
-    "rule-set:cn_domain,apple_cn,private_domain":
+    "rule-set:cn_domain,apple_cn,microsoft_domain,private_domain,fakeipfilter_cn":
       - "https://223.5.5.5/dns-query#disable-qtype-65=true"
       - "https://1.12.12.12/dns-query#disable-qtype-65=true"
+    "rule-set:fakeipfilter_!cn":
+      - "https://8.8.8.8/dns-query#🚀 默认代理&disable-qtype-65=true"
   nameserver:
+    - "https://8.8.8.8/dns-query#🚀 默认代理&ecs=223.5.5.0/24"
+  fallback:
     - "https://8.8.8.8/dns-query#🚀 默认代理"
+  fallback-filter:
+    geoip: true
+    geoip-code: CN
   
 
 # 注意锚点必须放在引用的上方，可以集中把锚点全部放yaml的顶部。
@@ -181,6 +190,10 @@ rule-anchor:
 
 # 规则集全部改用单行继承写法
 rule-providers:
+  # Fake-IP 专用排除列表（文本格式）
+  fakeipfilter_cn: {<<: *domain_text, url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/fakeipfilter-cn.list"}
+  fakeipfilter_!cn: {<<: *domain_text, url: "https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/fakeipfilter-!cn.list"}
+  
   # 自定义 Classical 规则集
   fin_class: {<<: *custom_yaml, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_finance.yaml"}
   btc_class: {<<: *custom_yaml, url: "https://raw.githubusercontent.com/AdoreYL/rule/refs/heads/main/geo/custom_btc.yaml"}
