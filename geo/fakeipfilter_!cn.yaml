@@ -1,6 +1,6 @@
 payload:
   # =========================================
-  # 域名完全匹配 (DOMAIN)
+  # 连通性探测 / 工具
   # =========================================
   - DOMAIN,cable.auth.com
   - DOMAIN,network-test.debian.org
@@ -12,57 +12,93 @@ payload:
   - DOMAIN,local.adguard.org
   - DOMAIN,proxy.golang.org
   - DOMAIN,shark007.net
-  - DOMAIN,time-ios.apple.com
-  - DOMAIN,pool.ntp.org
-  - DOMAIN,api-jooxtt.sanook.com
-  - DOMAIN,api.joox.com
-  - DOMAIN,joox.com
-  - DOMAIN,msftconnecttest.com
-  - DOMAIN,msftncsi.com
-  - DOMAIN,srv.nintendo.net
-  - DOMAIN,cdn.nintendo.net
-  - DOMAIN,stun.playstation.net
-  - DOMAIN,xnotify.xboxlive.com
-  - DOMAIN,battle.net
-  - DOMAIN,wargaming.net
-  - DOMAIN,steamcontent.com
-  - DOMAIN,heartbeat.belkin.com
-  - DOMAIN,lens.l.google.com
-  - DOMAIN,stun.l.google.com
-  - DOMAIN,na.b.g-tun.com
-  - DOMAIN,nflxvideo.net
-  - DOMAIN,media.dssott.com
-  - DOMAIN,pub.3gppnetwork.org
 
   # =========================================
-  # 域名后缀匹配 (DOMAIN-SUFFIX)
+  # NTP 授时服务
   # =========================================
+  - DOMAIN,time-ios.apple.com
   - DOMAIN-SUFFIX,pool.ntp.org
+  - DOMAIN-WILDCARD,time.*.com
+  - DOMAIN-WILDCARD,time.*.gov
+  - DOMAIN-WILDCARD,time.*.apple.com
+  - DOMAIN-WILDCARD,time1.*.com
+  - DOMAIN-WILDCARD,time2.*.com
+  - DOMAIN-WILDCARD,time3.*.com
+  - DOMAIN-WILDCARD,time4.*.com
+  - DOMAIN-WILDCARD,time5.*.com
+  - DOMAIN-WILDCARD,time6.*.com
+  - DOMAIN-WILDCARD,time7.*.com
+  - DOMAIN-WILDCARD,ntp.*.com
+  - DOMAIN-WILDCARD,ntp1.*.com
+  - DOMAIN-WILDCARD,ntp2.*.com
+  - DOMAIN-WILDCARD,ntp3.*.com
+  - DOMAIN-WILDCARD,ntp4.*.com
+  - DOMAIN-WILDCARD,ntp5.*.com
+  - DOMAIN-WILDCARD,ntp6.*.com
+  - DOMAIN-WILDCARD,ntp7.*.com
+
+  # =========================================
+  # STUN 打洞服务
+  # =========================================
+  - DOMAIN-WILDCARD,stun.*
+  - DOMAIN-WILDCARD,*.stun.*
+
+  # =========================================
+  # JOOX 音乐
+  # =========================================
+  - DOMAIN,api-jooxtt.sanook.com
+  - DOMAIN,api.joox.com
+  - DOMAIN-SUFFIX,joox.com
+
+  # =========================================
+  # Windows 本地网络连接指示器 (NCSI)
+  # =========================================
   - DOMAIN-SUFFIX,msftconnecttest.com
   - DOMAIN-SUFFIX,msftncsi.com
+
+  # =========================================
+  # 主机平台 (Switch / PlayStation / Xbox)
+  # =========================================
   - DOMAIN-SUFFIX,srv.nintendo.net
   - DOMAIN-SUFFIX,cdn.nintendo.net
+  - DOMAIN-WILDCARD,*.n.n.srv.nintendo.net
   - DOMAIN-SUFFIX,stun.playstation.net
+  - DOMAIN,xnotify.xboxlive.com
+  - DOMAIN-SUFFIX,xboxlive.com
+  - DOMAIN-WILDCARD,xbox.*.microsoft.com
+  - DOMAIN-WILDCARD,xbox.*.*.microsoft.com
+
+  # =========================================
+  # 游戏服务与内容分发 (战网 / Wargaming / Steam)
+  # =========================================
   - DOMAIN-SUFFIX,battle.net
   - DOMAIN-SUFFIX,wargaming.net
   - DOMAIN-SUFFIX,steamcontent.com
+
+  # =========================================
+  # 最终幻想 14 (FFXIV 国际服)
+  # =========================================
+  - DOMAIN-SUFFIX,square-enix.com
+  - DOMAIN-SUFFIX,finalfantasyxiv.com
+  - DOMAIN-SUFFIX,ffxiv.com
+
+  # =========================================
+  # Linksys 路由器
+  # =========================================
+  - DOMAIN,heartbeat.belkin.com
+  - DOMAIN-SUFFIX,linksys.com
+  - DOMAIN-SUFFIX,linksyssmartwifi.com
+
+  # =========================================
+  # Google 特殊服务
+  # =========================================
+  - DOMAIN,lens.l.google.com
+  - DOMAIN,stun.l.google.com
+  - DOMAIN,na.b.g-tun.com
+
+  # =========================================
+  # 媒体与通信 (Netflix / Disney+ / Wi-Fi Calling)
+  # =========================================
   - DOMAIN-SUFFIX,nflxvideo.net
   - DOMAIN-SUFFIX,media.dssott.com
   - DOMAIN-SUFFIX,pub.3gppnetwork.org
-
-  # =========================================
-  # 正则匹配 (DOMAIN-REGEX)
-  # =========================================
-  - DOMAIN-REGEX,^time\.[^.]+\.com$
-  - DOMAIN-REGEX,^time\.[^.]+\.gov$
-  - DOMAIN-REGEX,^time\.[^.]+\.apple\.com$
-  - DOMAIN-REGEX,^time[1-7]\.[^.]+\.com$
-  - DOMAIN-REGEX,^ntp[1-7]?\.[^.]+\.com$
-  - DOMAIN-REGEX,^(.+\.)?stun\.[^.]+\.[^.]+$
-  - DOMAIN-REGEX,^stun\.[^.]+\.[^.]+$
-  - DOMAIN-REGEX,^[^.]+\.n\.n\.srv\.nintendo\.net$
-  - DOMAIN-REGEX,^xbox\.[^.]+\.[^.]+\.microsoft\.com$
-  - DOMAIN-REGEX,^[^.]+\.[^.]+\.xboxlive\.com$
-  - DOMAIN-REGEX,^[^.]+\.square\-enix\.com$
-  - DOMAIN-REGEX,^[^.]+\.finalfantasyxiv\.com$
-  - DOMAIN-REGEX,^[^.]+\.linksys(smartwifi)?\.com$
