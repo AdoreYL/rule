@@ -1,4 +1,4 @@
-﻿# 文件名：custom_ai.yaml
+# 文件名：custom_ai.yaml
 # 说明：自用国外与出海 AI 服务规则集（整合 category-ai-!cn 与自建代理）
 payload:
   # =========================================
@@ -15,6 +15,7 @@ payload:
   - DOMAIN-SUFFIX,sora.com
   - DOMAIN-SUFFIX,chatgptusercontent.com
   - DOMAIN-SUFFIX,chatgpt.tv
+  - DOMAIN-SUFFIX,searchgpt.com
 
   # OpenAI Azure / CDN / Storage backend
   - DOMAIN,openaiapi-site.azureedge.net
@@ -26,10 +27,12 @@ payload:
   - DOMAIN,openaicom.imgix.net
   - DOMAIN,openai.com.cdn.cloudflare.net
 
-  # OpenAI telemetry / realtime / feedback
+  # OpenAI telemetry / realtime / feature gates
   - DOMAIN,o33249.ingest.sentry.io
   - DOMAIN,openai.qualtrics.com
   - DOMAIN-SUFFIX,chatgpt.live
+  - DOMAIN-SUFFIX,featuregates.org
+  - DOMAIN-SUFFIX,statsigapi.net
   - DOMAIN-REGEX,^chatgpt-async-webps-prod-.*\.webpubsub\.azure\.com$
 
   # =========================================
@@ -43,12 +46,14 @@ payload:
   - DOMAIN-SUFFIX,claudemcpclient.com
   - DOMAIN-SUFFIX,claudemcpcontent.com
 
-  # Claude CDN
+  # Claude CDN & Analytics
   - DOMAIN,servd-anthropic-website.b-cdn.net
+  - DOMAIN,cdn.usefathom.com
 
   # =========================================
-  # 3. Google Gemini / Google AI Ecosystem
+  # 3. Google Gemini / Antigravity / Google AI
   # =========================================
+  - DOMAIN-SUFFIX,ai.google
   - DOMAIN-SUFFIX,gemini.google
   - DOMAIN-SUFFIX,gemini.google.com
   - DOMAIN-SUFFIX,bard.google.com
@@ -75,6 +80,15 @@ payload:
   - DOMAIN-SUFFIX,jules.google.com
   - DOMAIN-SUFFIX,antigravity.google
   - DOMAIN-SUFFIX,antigravity-unleash.goog
+  - DOMAIN-SUFFIX,idx.dev
+  - DOMAIN-SUFFIX,idx.google.com
+  - DOMAIN-SUFFIX,firebase.studio
+  - DOMAIN-SUFFIX,whisk.google
+  - DOMAIN-SUFFIX,fx.google
+  - DOMAIN-SUFFIX,mariner.google
+  - DOMAIN-SUFFIX,mariner.google.com
+  - DOMAIN-SUFFIX,illuminate.google.com
+  - DOMAIN-SUFFIX,learnabout.google.com
   - DOMAIN-SUFFIX,stitch.withgoogle.com
   - DOMAIN-SUFFIX,gemini.gstatic.com
 
@@ -84,9 +98,13 @@ payload:
   - DOMAIN,webchannel-alkalimakersuite-pa.clients6.google.com
   - DOMAIN,geminiweb-pa.clients.google.com
   - DOMAIN,geminiweb-pa.clients6.google.com
+  - DOMAIN,cloudcode-pa.clients6.google.com
+  - DOMAIN,waa-pa.clients6.google.com
   - DOMAIN,cloudaicompanion.googleapis.com
   - DOMAIN,cloudcode-pa.googleapis.com
   - DOMAIN,daily-cloudcode-pa.googleapis.com
+  - DOMAIN,codeassist-pa.googleapis.com
+  - DOMAIN,maroon-pa.googleapis.com
   - DOMAIN,notebooklm-pa.googleapis.com
   - DOMAIN,notebooklm.googleapis.com
   - DOMAIN,antigravity-pa.googleapis.com
@@ -97,6 +115,7 @@ payload:
   - DOMAIN-SUFFIX,geller-pa.googleapis.com
   - DOMAIN-SUFFIX,proactivebackend-pa.googleapis.com
   - DOMAIN-SUFFIX,robinfrontend-pa.googleapis.com
+  - DOMAIN-SUFFIX,alkalitailwind-pa.googleapis.com
   - DOMAIN-SUFFIX,labstailwind.pa.googleapis.com
 
   # =========================================
@@ -107,7 +126,6 @@ payload:
   - DOMAIN-SUFFIX,copilot.com
   - DOMAIN-SUFFIX,copilot-stg.com
   - DOMAIN-SUFFIX,githubcopilot.com
-  - DOMAIN-SUFFIX,api.githubcopilot.com
   - DOMAIN,copilot-proxy.githubusercontent.com
   - DOMAIN,copilot-workspace.githubnext.com
   - DOMAIN,copilotprodattachments.blob.core.windows.net
@@ -138,12 +156,23 @@ payload:
   - DOMAIN-SUFFIX,trae.ai
   - DOMAIN-SUFFIX,marscode.com
 
-  # Other Coding AI & Reviewers
+  # Cline / Roo Code / Augment / Vibe Coding
+  - DOMAIN-SUFFIX,cline.bot
+  - DOMAIN-SUFFIX,roocode.com
+  - DOMAIN-SUFFIX,kilocode.ai
+  - DOMAIN-SUFFIX,augmentcode.com
+  - DOMAIN-SUFFIX,continue.dev
+  - DOMAIN-SUFFIX,ampcode.com
+  - DOMAIN-SUFFIX,zed.dev
+  - DOMAIN-SUFFIX,lovable.dev
+  - DOMAIN-SUFFIX,bolt.new
+  - DOMAIN-SUFFIX,same.new
+  - DOMAIN-SUFFIX,v0.dev
+  - DOMAIN-SUFFIX,v0.app
   - DOMAIN-SUFFIX,replit.com
   - DOMAIN-SUFFIX,devin.ai
   - DOMAIN-SUFFIX,coderabbit.ai
   - DOMAIN-SUFFIX,coderabbit.gallery.vsassets.io
-  - DOMAIN-SUFFIX,v0.dev
   - DOMAIN-SUFFIX,kiro.dev
   - DOMAIN-SUFFIX,qoder.com
   - DOMAIN-SUFFIX,opencode.ai
@@ -158,10 +187,12 @@ payload:
   - DOMAIN-SUFFIX,manuscdn.com
   - DOMAIN-SUFFIX,crewai.com
   - DOMAIN-SUFFIX,langchain.com
+  - DOMAIN-SUFFIX,smith.langchain.com
   - DOMAIN-SUFFIX,coze.com
   - DOMAIN-SUFFIX,openclaw.ai
   - DOMAIN-SUFFIX,clawhub.ai
   - DOMAIN-SUFFIX,agentclientprotocol.com
+  - DOMAIN-SUFFIX,modelcontextprotocol.io
 
   # =========================================
   # 7. Local & Open-Source LLM Running
@@ -199,7 +230,10 @@ payload:
   - DOMAIN-SUFFIX,pi.ai
   - DOMAIN-SUFFIX,duck.ai
   - DOMAIN-SUFFIX,arena.ai
+  - DOMAIN-SUFFIX,lmarena.ai
   - DOMAIN-SUFFIX,sider.ai
+  - DOMAIN-SUFFIX,monica.im
+  - DOMAIN-SUFFIX,genspark.ai
   - DOMAIN-SUFFIX,talkai.info
   - DOMAIN-SUFFIX,deepwiki.com
   - DOMAIN-SUFFIX,deepwiki.org
@@ -209,20 +243,17 @@ payload:
   # =========================================
   # 9. 国内大模型海外/出海版 (Overseas Endpoints)
   # =========================================
-  # Moonshot Kimi
   - DOMAIN-SUFFIX,kimi.ai
   - DOMAIN-SUFFIX,moonshot.ai
-
-  # MiniMax
   - DOMAIN-SUFFIX,minimax.io
-
-  # ByteDance Cici
+  - DOMAIN-SUFFIX,hailuoai.video
+  - DOMAIN-SUFFIX,klingai.com
   - DOMAIN-SUFFIX,cici.com
   - DOMAIN-SUFFIX,ciciai.com
   - DOMAIN-SUFFIX,ciciaicdn.com
-
-  # Dola AI
   - DOMAIN-SUFFIX,dola.com
+  - DOMAIN-SUFFIX,qwenlm.ai
+  - DOMAIN-SUFFIX,chat.qwen.ai
 
   # =========================================
   # 10. AI Image / Video / 3D / Creative Generation
@@ -231,6 +262,9 @@ payload:
   - DOMAIN-SUFFIX,runwayml.com
   - DOMAIN-SUFFIX,lumalabs.ai
   - DOMAIN-SUFFIX,pika.art
+  - DOMAIN-SUFFIX,ideogram.ai
+  - DOMAIN-SUFFIX,recraft.ai
+  - DOMAIN-SUFFIX,blackforestlabs.ai
   - DOMAIN-SUFFIX,openart.ai
   - DOMAIN-SUFFIX,civitai.com
   - DOMAIN-SUFFIX,leonardo.ai
@@ -238,6 +272,7 @@ payload:
   - DOMAIN-SUFFIX,lovart.ai
   - DOMAIN-SUFFIX,muse.ai
   - DOMAIN-SUFFIX,tripo3d.ai
+  - DOMAIN-SUFFIX,meshy.ai
   - DOMAIN-SUFFIX,novelai.net
   - DOMAIN-SUFFIX,spicywriter.com
   - DOMAIN-SUFFIX,dreamgen.com
@@ -272,6 +307,8 @@ payload:
 
   # Inference Platforms & Foundation Models
   - DOMAIN-SUFFIX,openrouter.ai
+  - DOMAIN-SUFFIX,fal.ai
+  - DOMAIN-SUFFIX,fal.run
   - DOMAIN-SUFFIX,mistral.ai
   - DOMAIN-SUFFIX,cohere.com
   - DOMAIN-SUFFIX,cohere.ai
@@ -281,6 +318,8 @@ payload:
   - DOMAIN-SUFFIX,replicate.com
   - DOMAIN-SUFFIX,modal.com
   - DOMAIN-SUFFIX,cerebras.ai
+  - DOMAIN-SUFFIX,sambanova.ai
+  - DOMAIN-SUFFIX,hyperbolic.xyz
   - DOMAIN-SUFFIX,chutes.ai
   - DOMAIN-SUFFIX,h2o.ai
   - DOMAIN-SUFFIX,mozilla.ai
