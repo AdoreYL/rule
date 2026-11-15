@@ -1,36 +1,168 @@
 payload:
-  # =========================================
-  # 1. 腾讯游戏
-  # =========================================
-  - DOMAIN-SUFFIX,tencent-gcloud.com
-  - DOMAIN-SUFFIX,gcloudcs.com
+  # ================= 1. Steam 中国大陆 CDN 与蒸汽平台 (完整合并 steam@cn.mrs) =================
+  # 阿里云 / 新流云 / 白山云 / 网宿 / 数云科技 CDN
+  - DOMAIN,alibaba.cdn.steampipe.steamcontent.com
+  - DOMAIN,lv.queniujq.cn
+  - DOMAIN,xz.pphimalayanrt.com
+  - DOMAIN,gstore.val.manlaxy.com
+  - DOMAIN-SUFFIX,dl.steam.clngaa.com
+  - DOMAIN-SUFFIX,st.dl.bscstorage.net
+  - DOMAIN-SUFFIX,st.dl.eccdnx.com
+  - DOMAIN-SUFFIX,st.dl.pinyuncloud.com
+  - DOMAIN-SUFFIX,steampowered.com.8686c.com
+  - DOMAIN-SUFFIX,steamstatic.com.8686c.com
+  # 完美世界国服 (CS2 / Dota2) & 蒸汽中国
+  - DOMAIN-SUFFIX,steamchina.com
+  - DOMAIN-SUFFIX,wmsjsteam.com
+  - DOMAIN-SUFFIX,csgo.com.cn
+  - DOMAIN-SUFFIX,csgo.wmsj.cn
+  - DOMAIN-SUFFIX,dota2.com.cn
+  - DOMAIN-SUFFIX,dota2.wmsj.cn
+
+  # ================= 2. 国内主流游戏平台与工具 =================
+  # 腾讯 WeGame & START云游戏 & GCloud & ACE反作弊
+  - DOMAIN-SUFFIX,wegame.com
   - DOMAIN-SUFFIX,wegame.com.cn
   - DOMAIN-SUFFIX,wegameplus.com
-  - DOMAIN-SUFFIX,leagueoflegends.cn # 英雄联盟国服
-  - DOMAIN-SUFFIX,lpl.com.cn
-  
-  # =========================================
-  # 2. 网易游戏
-  # =========================================
-  - DOMAIN-SUFFIX,163.com
-  - DOMAIN-SUFFIX,126.net
-  - DOMAIN-SUFFIX,netease.com
-  - DOMAIN-SUFFIX,blizzardgames.cn   # 暴雪国服(网易代理)
-  - DOMAIN-SUFFIX,battlenet.com.cn
-  
-  # =========================================
-  # 3. 米哈游国服与其他大厂
-  # =========================================
+  - DOMAIN-SUFFIX,werepository.com.cn
+  - DOMAIN-SUFFIX,gtgres.com
+  - DOMAIN-SUFFIX,realcybertron.com
+  - DOMAIN-SUFFIX,ffbuddy.com
+  - DOMAIN-SUFFIX,gotolink.net
+  - DOMAIN-SUFFIX,tencentstart.com
+  - DOMAIN-SUFFIX,gcloudsdk.com
+  - DOMAIN-SUFFIX,gcloudsvcs.com
+  - DOMAIN-SUFFIX,tencent-gcloud.com
+  - DOMAIN-SUFFIX,hkgcloudcs.com
+  - DOMAIN-SUFFIX,anticheatexpert.com
+  - DOMAIN-SUFFIX,gamebonfire.com
+  # 完美世界竞技平台 / B站游戏 / TapTap国内 / 小黑盒 / 游民 / 3DM
+  - DOMAIN-SUFFIX,wanmei.com
+  - DOMAIN-SUFFIX,pwrd.com
+  - DOMAIN-SUFFIX,laohu.com
+  - DOMAIN-SUFFIX,bilibiligame.cn
+  - DOMAIN-SUFFIX,bilibiligame.net
+  - DOMAIN-SUFFIX,biligame.com
+  - DOMAIN-SUFFIX,biligame.net
+  - DOMAIN-SUFFIX,taptap.cn
+  - DOMAIN-SUFFIX,taptap.com
+  - DOMAIN-SUFFIX,tapimg.com
+  - DOMAIN-SUFFIX,xiaoheihe.cn
+  - DOMAIN-SUFFIX,maxjia.com
+  - DOMAIN-SUFFIX,3839.com
+  - DOMAIN-SUFFIX,4399.com
+  - DOMAIN-SUFFIX,7k7k.com
+  - DOMAIN-SUFFIX,sonkwo.cn
+  - DOMAIN-SUFFIX,sonkwo.com
+  # 主机/Epic/微软国内下载 CDN
+  - DOMAIN-SUFFIX,epicgames.HcCDN.net
+  - DOMAIN-SUFFIX,download.xboxlive.com.edgesuite.net
+  - DOMAIN-SUFFIX,assets1.xboxlive.cn
+  - DOMAIN-SUFFIX,assets2.xboxlive.cn
+  - DOMAIN-SUFFIX,xboxlive.cn
+
+  # ================= 3. 米哈游国服 (原神 / 崩铁 / 绝区零 / 崩坏3 / 米游社) =================
+  - DOMAIN-SUFFIX,yuanshen.com
+  - DOMAIN-SUFFIX,bhsr.com
+  - DOMAIN-SUFFIX,juequling.com
+  - DOMAIN-SUFFIX,bh3.com
   - DOMAIN-SUFFIX,mihoyo.com
   - DOMAIN-SUFFIX,miyoushe.com
-  - DOMAIN-SUFFIX,yuanshen.com       # 原神国服专属
-  - DOMAIN-SUFFIX,hypergryph.com     # 明日方舟
-  - DOMAIN-SUFFIX,xoyo.com           # 西山居(剑网3)
-  - DOMAIN-SUFFIX,24entertainment.com # 永劫无间
-  
-  # =========================================
-  # 4. 完美世界电竞 (CS2国服 / Dota2国服)
-  # =========================================
-  - DOMAIN-SUFFIX,wmsj.cn
-  - DOMAIN-SUFFIX,csgo.com.cn
-  - DOMAIN-SUFFIX,dota2.com.cn
+  - DOMAIN-SUFFIX,mhystatic.com
+  - DOMAIN-SUFFIX,mhyurl.cn
+  - DOMAIN-SUFFIX,mihayo.com
+  - DOMAIN-SUFFIX,mihayou.com
+  - DOMAIN-SUFFIX,mihoyocg.com
+  - DOMAIN-SUFFIX,mihoyogift.com
+  - DOMAIN-SUFFIX,mihoyomall.com
+
+  # ================= 4. 库洛游戏国服 (鸣潮 / 战双帕弥什 / 库街区) =================
+  - DOMAIN-SUFFIX,aki-game.com
+  - DOMAIN-SUFFIX,aki-game2.com
+  - DOMAIN-SUFFIX,kurobbs.com
+  - DOMAIN-SUFFIX,kurogame.com
+  - DOMAIN-SUFFIX,kurogame.xyz
+  - DOMAIN-SUFFIX,kurogames.com
+
+  # ================= 5. 鹰角 / 叠纸 / 散爆 / 莉莉丝 / 游科 (主流二游与单机国服) =================
+  # 鹰角网络 (明日方舟 / 终末地 / 森空岛)
+  - DOMAIN-SUFFIX,hypergryph.com
+  - DOMAIN-SUFFIX,skland.com
+  # 游戏科学 (黑神话：悟空)
+  - DOMAIN-SUFFIX,heishenhua.com
+  - DOMAIN-SUFFIX,gamesci.com.cn
+  # 叠纸游戏 (无限暖暖 / 恋与深空 / 闪耀暖暖国服)
+  - DOMAIN-SUFFIX,papegames.cn
+  - DOMAIN-SUFFIX,papegames.com
+  - DOMAIN-SUFFIX,nikkigames.cn
+  # 散爆网络 (少女前线 / 少前2：追放国服)
+  - DOMAIN-SUFFIX,sunborngame.com
+  # 深蓝互动 (重返未来：1999国服) / 蛮啾 / 莉莉丝
+  - DOMAIN-SUFFIX,sl916.com
+  - DOMAIN-SUFFIX,manjuu.com
+  - DOMAIN-SUFFIX,lilithgames.com
+  - DOMAIN-SUFFIX,lilith.com
+
+  # ================= 6. 腾讯游戏国服 (王者/和平/LOL国服/瓦国服/三角洲/DNF/CF) =================
+  - DOMAIN-SUFFIX,pvp.qq.com
+  - DOMAIN-SUFFIX,lol.qq.com
+  - DOMAIN-SUFFIX,val.qq.com
+  - DOMAIN-SUFFIX,cf.qq.com
+  - DOMAIN-SUFFIX,dnf.qq.com
+  - DOMAIN-SUFFIX,gp.qq.com
+  - DOMAIN-SUFFIX,df.qq.com
+  - DOMAIN-SUFFIX,jk.qq.com
+  - DOMAIN-SUFFIX,nsh.qq.com
+  - DOMAIN-SUFFIX,goto-game.com
+  - DOMAIN-SUFFIX,goto-game.mobi
+  - DOMAIN-SUFFIX,goto-game.net.cn
+  - DOMAIN-SUFFIX,goto-game.org
+  - DOMAIN-SUFFIX,happyhlddz.com
+  - DOMAIN-SUFFIX,hdyxgame.com
+  - DOMAIN-SUFFIX,rmwxgame.com
+  - DOMAIN-SUFFIX,syxlgame.com
+  - DOMAIN-SUFFIX,zcjbgame.com
+  - DOMAIN-SUFFIX,zhuoyuegame.com
+  - DOMAIN-SUFFIX,nextstudios.com
+  - DOMAIN-SUFFIX,mszdld.net
+  - DOMAIN-SUFFIX,bcfmglobal.com
+  - DOMAIN-SUFFIX,tcfmglobal.com
+  - DOMAIN-SUFFIX,17roco.com
+  - DOMAIN-SUFFIX,roblox.cn
+  - DOMAIN-SUFFIX,robloxdev.cn
+  - DOMAIN-SUFFIX,brawlstars.cn
+  - DOMAIN-SUFFIX,haydaypop.cn
+  - DOMAIN-SUFFIX,labycore.cn
+
+  # ================= 7. 网易游戏国服 & 暴雪战网国服 (永劫/逆水寒/梦幻/燕云/漫威争锋国服) =================
+  - DOMAIN-SUFFIX,yjwujian.cn
+  - DOMAIN-SUFFIX,yysls.cn
+  - DOMAIN-SUFFIX,nsh.163.com
+  - DOMAIN-SUFFIX,marvelrivals.163.com
+  - DOMAIN-SUFFIX,uu.163.com
+  - DOMAIN-SUFFIX,nie.163.com
+  - DOMAIN-SUFFIX,game.163.com
+  - DOMAIN-SUFFIX,ds.163.com
+  - DOMAIN-SUFFIX,battlenet.com.cn
+  - DOMAIN-SUFFIX,blizzard.cn
+  - DOMAIN-SUFFIX,blzstatic.cn
+  - DOMAIN-SUFFIX,wowchina.com
+  - DOMAIN-SUFFIX,bnet.163.com
+  - DOMAIN,di.res.netease.com
+  - DOMAIN,diablo3.nosdn.127.net
+  - DOMAIN,hearthstone.nosdn.127.net
+  - DOMAIN,heroes.nos.netease.com
+  - DOMAIN,overwatch.nosdn.127.net
+  - DOMAIN,sc2.nosdn.127.net
+  - DOMAIN,wow.nosdn.127.net
+  - DOMAIN,blz.nosdn.127.net
+
+  # ================= 8. 西山居 / 巨人 / 雷霆 / 米姆等其他主流国服 =================
+  - DOMAIN-SUFFIX,xoyo.com
+  - DOMAIN-SUFFIX,seasungames.com
+  - DOMAIN-SUFFIX,ztgame.com
+  - DOMAIN-SUFFIX,leiting.com
+  - DOMAIN-SUFFIX,gbits.com
+  - DOMAIN-SUFFIX,jj.cn
+  - DOMAIN-SUFFIX,sanguosha.com
+  - DOMAIN-SUFFIX,dobest.com
