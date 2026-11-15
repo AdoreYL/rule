@@ -1,24 +1,153 @@
 payload:
-  # =========================================
-  # 1. 拳头 (LoL国际服 / Valorant 瓦罗兰特)
-  # =========================================
-  - DOMAIN-SUFFIX,riotgames.com
-  - DOMAIN-SUFFIX,playvalorant.com
-  - DOMAIN-SUFFIX,leagueoflegends.com
-  
-  # =========================================
-  # 2. HoYoverse (原神/星铁/绝区零 国际服)
-  # =========================================
+  # ================= 1. 米哈游国际服 HoYoverse (原神/崩铁/绝区零/崩3国际服) =================
   - DOMAIN-SUFFIX,hoyoverse.com
   - DOMAIN-SUFFIX,hoyolab.com
+  - DOMAIN-SUFFIX,hoyo.link
+  - DOMAIN-SUFFIX,cognosphere.com
   - DOMAIN-SUFFIX,genshinimpact.com
   - DOMAIN-SUFFIX,honkaistarrail.com
+  - DOMAIN-SUFFIX,starrails.com
   - DOMAIN-SUFFIX,zenlesszonezero.com
-  
-  # =========================================
-  # 3. 其他主流外服 (PUBG / 动视 / 独立游戏)
-  # =========================================
+  - DOMAIN-SUFFIX,honkaiimpact3.com
+  - DOMAIN-SUFFIX,n0vadesktop.com
+
+  # ================= 2. 库洛游戏国际服 (鸣潮 Wuthering Waves / 战双国际服) =================
+  - DOMAIN,wutheringwaves.kurogames.com
+  - DOMAIN,mcguide.kurogames.com
+  - DOMAIN,wuwaguide.kurogames.com
+  - DOMAIN-SUFFIX,aki-game.net
+  - DOMAIN-SUFFIX,aki-game2.net
+  - DOMAIN-SUFFIX,kurogame.net
+  - DOMAIN-SUFFIX,kurogames.net
+  - DOMAIN-SUFFIX,kurogame-service.com
+
+  # ================= 3. 鹰角 / 悠星 / Nexon / 叠纸国际服 (二游外服) =================
+  # 明日方舟国际服/日服/韩服 & 终末地国际服 (Gryphline / Yostar)
+  - DOMAIN-SUFFIX,gryphline.com
+  - DOMAIN-SUFFIX,arknights.global
+  - DOMAIN-SUFFIX,arknights.jp
+  - DOMAIN-SUFFIX,arknights.kr
+  - DOMAIN-SUFFIX,yostar.com
+  - DOMAIN-SUFFIX,yostar.co.jp
+  - DOMAIN-SUFFIX,yo-star.com
+  - DOMAIN-SUFFIX,azurlane.jp
+  - DOMAIN-SUFFIX,mahjongsoul.com
+  # 蔚蓝档案 / Nexon / 胜利女神 NIKKE / 赛马娘 / 无限暖暖国际服
+  - DOMAIN-SUFFIX,bluearchive.jp
+  - DOMAIN-SUFFIX,nexon.com
+  - DOMAIN-SUFFIX,nexon.co.jp
+  - DOMAIN-SUFFIX,nexon.co.kr
+  - DOMAIN-SUFFIX,nexoncdn.co.kr
+  - DOMAIN-SUFFIX,nikke-en.com
+  - DOMAIN-SUFFIX,nikke-jp.com
+  - DOMAIN-SUFFIX,shiftup.co.kr
+  - DOMAIN-SUFFIX,cygames.jp
+  - DOMAIN-SUFFIX,umamusume.jp
+  - DOMAIN-SUFFIX,infoldgames.com
+  - DOMAIN-SUFFIX,gf2exilium.com
+
+  # ================= 4. 拳头游戏国际服 Riot Games (LOL国际服/台服 & Valorant 国际服) =================
+  - DOMAIN-SUFFIX,riotgames.com
+  - DOMAIN-SUFFIX,riotcdn.net
+  - DOMAIN-SUFFIX,riot.net
+  - DOMAIN-SUFFIX,pvp.net
+  - DOMAIN-SUFFIX,leagueoflegends.com
+  - DOMAIN-SUFFIX,lolesports.com
+  - DOMAIN-SUFFIX,playvalorant.com
+  - DOMAIN-SUFFIX,valorantesports.com
+  - DOMAIN-SUFFIX,playruneterra.com
+
+  # ================= 5. 腾讯国际服 Level Infinite & 网易国际服 Exptional Global =================
+  # Level Infinite / PUBG / 三角洲国际服 / 暗区突围国际服 / 王者国际服
+  - DOMAIN-SUFFIX,levelinfinite.com
+  - DOMAIN-SUFFIX,proximabeta.com
+  - DOMAIN-SUFFIX,intlgame.com
+  - DOMAIN-SUFFIX,igamecj.com
   - DOMAIN-SUFFIX,pubg.com
-  - DOMAIN-SUFFIX,playbattlegrounds.com
-  - DOMAIN-SUFFIX,roblox.com
+  - DOMAIN-SUFFIX,pubgmobile.com
+  - DOMAIN-SUFFIX,krafton.com
+  - DOMAIN-SUFFIX,playdeltaforce.com
+  - DOMAIN-SUFFIX,arenabreakout.com
+  - DOMAIN-SUFFIX,arenabreakoutinfinite.com
+  - DOMAIN-SUFFIX,honorofkings.com
+  - DOMAIN-SUFFIX,toweroffantasy-global.com
+  # 网易国际服 (永劫无间国际服 / 漫威争锋国际服 / 燕云国际服 / 荒野行动日服)
+  - DOMAIN-SUFFIX,narakathegame.com
+  - DOMAIN-SUFFIX,marvelrivals.com
+  - DOMAIN-SUFFIX,wherewindsmeetgame.com
+  - DOMAIN-SUFFIX,neteasegames.com
+  - DOMAIN-SUFFIX,knivesout.jp
+  - DOMAIN-SUFFIX,identityvgame.com
+  - DOMAIN-SUFFIX,oncehuman.game
+
+  # ================= 6. Valve / 暴雪 / 动视 / EA / 育碧 海外大作联机 =================
+  # Dota2 / CS2 / Artifact / Underlords
+  - DOMAIN-SUFFIX,dota2.com
+  - DOMAIN-SUFFIX,counter-strike.net
+  - DOMAIN-SUFFIX,playartifact.com
+  - DOMAIN-SUFFIX,underlords.com
+  # 暴雪 & 动视国际服 (魔兽/守望2/暗黑4/炉石/使命召唤)
+  - DOMAIN-SUFFIX,worldofwarcraft.com
+  - DOMAIN-SUFFIX,playoverwatch.com
+  - DOMAIN-SUFFIX,playhearthstone.com
+  - DOMAIN-SUFFIX,firesidegatherings.com
+  - DOMAIN-SUFFIX,diablo3.com
+  - DOMAIN-SUFFIX,diabloimmortal.com
+  - DOMAIN-SUFFIX,heroesofthestorm.com
+  - DOMAIN-SUFFIX,starcraft.com
+  - DOMAIN-SUFFIX,starcraft2.com
+  - DOMAIN-SUFFIX,playwarcraft3.com
+  - DOMAIN-SUFFIX,activision.com
+  - DOMAIN-SUFFIX,callofduty.com
+  - DOMAIN-SUFFIX,callofduty.net
+  # Apex 英雄 / 战地 / 堡垒之夜 / 逃离塔科夫 / 彩虹六号 / 绝地潜兵
+  - DOMAIN-SUFFIX,apexlegends.com
+  - DOMAIN-SUFFIX,respawn.com
+  - DOMAIN-SUFFIX,battlefield.com
+  - DOMAIN-SUFFIX,fortnite.com
+  - DOMAIN-SUFFIX,escapefromtarkov.com
+  - DOMAIN-SUFFIX,battlestategames.com
+  - DOMAIN-SUFFIX,deadbydaylight.com
+  - DOMAIN-SUFFIX,bhvrdbd.com
+  - DOMAIN-SUFFIX,thefinals.com
+  - DOMAIN-SUFFIX,embark-studios.com
+
+  # ================= 7. 沙盒 / MMO / 跨平台热门游戏 (MC/Roblox/VRChat/FF14/POE/战争雷霆) =================
   - DOMAIN-SUFFIX,minecraft.net
+  - DOMAIN-SUFFIX,mojang.com
+  - DOMAIN-SUFFIX,minecraftservices.com
+  - DOMAIN-SUFFIX,hypixel.net
+  - DOMAIN-SUFFIX,roblox.com
+  - DOMAIN-SUFFIX,rbxcdn.com
+  - DOMAIN-SUFFIX,vrchat.com
+  - DOMAIN-SUFFIX,vrchat.net
+  - DOMAIN-SUFFIX,rec.net
+  - DOMAIN-SUFFIX,finalfantasyxiv.com
+  - DOMAIN-SUFFIX,square-enix.com
+  - DOMAIN-SUFFIX,pathofexile.com
+  - DOMAIN-SUFFIX,grindinggear.com
+  - DOMAIN-SUFFIX,warframe.com
+  - DOMAIN-SUFFIX,digitalextremes.com
+  - DOMAIN-SUFFIX,bungie.net
+  - DOMAIN-SUFFIX,guildwars2.com
+  - DOMAIN-SUFFIX,arena.net
+  - DOMAIN-SUFFIX,blackdesertonline.com
+  - DOMAIN-SUFFIX,pearlabyss.com
+  - DOMAIN-SUFFIX,warthunder.com
+  - DOMAIN-SUFFIX,gaijin.net
+  - DOMAIN-SUFFIX,gaijinent.com
+  - DOMAIN-SUFFIX,wargaming.net
+  - DOMAIN-SUFFIX,worldoftanks.com
+  - DOMAIN-SUFFIX,worldofwarships.com
+  - DOMAIN-SUFFIX,eveonline.com
+  - DOMAIN-SUFFIX,ccpgames.com
+  # Supercell 国际服 / Pokemon GO
+  - DOMAIN-SUFFIX,supercell.com
+  - DOMAIN-SUFFIX,supercell.net
+  - DOMAIN-SUFFIX,brawlstars.com
+  - DOMAIN-SUFFIX,brawlstarsgame.com
+  - DOMAIN-SUFFIX,clashofclans.com
+  - DOMAIN-SUFFIX,clashroyale.com
+  - DOMAIN-SUFFIX,haydaygame.com
+  - DOMAIN-SUFFIX,pokemongo.com
+  - DOMAIN-SUFFIX,nianticlabs.com
