@@ -20,33 +20,6 @@ proxy-providers:
       url: https://www.google.com/generate_204
       interval: 300
     proxy: 直连
-  Airport_Ahysteria:
-    url: "订阅"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.google.com/generate_204
-      interval: 300
-    proxy: 直连
-    override:
-      udp: true
-      skip-cert-verify: false
-      alpn:
-        - h2
-      down: "1000Mbps"
-      up: "50Mbps"
-      port: 18900
-      ports: "28000-29000"
-  Airport_CF:
-    url: "订阅"
-    type: http
-    interval: 86400
-    health-check:
-      enable: true
-      url: https://www.google.com/generate_204
-      interval: 900
-    proxy: 直连
   Airport落地:
     url: "订阅"
     type: http
