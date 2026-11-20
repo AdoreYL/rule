@@ -24,7 +24,7 @@ rule-anchor:
   Exclude: &Exclude "^((?!(官网|剩余|流量|套餐|订阅|到期时间|直连|GB|Expire Date|Traffic|ExpireDate|中转|落地|SS|CF|ED|JC)).)*$"
   # 策略组
   SD: &SD {type: select, include-all: true}
-  FB: &FB {type: fallback, include-all: true, interval: 300, lazy: true, url: 'https://www.gstatic.com/generate_204'}
+  FB: &FB {type: fallback, include-all: true, interval: 300, lazy: false, url: 'https://www.gstatic.com/generate_204'}
   URL: &URL {type: url-test, include-all: true, tolerance: 50, interval: 300, lazy: true, url: 'https://www.gstatic.com/generate_204'}
   # ICON
   Failover: &Failover "https://git.5201888.xyz/https://raw.githubusercontent.com/AdoreYL/icons/main/app/corner/stash_01.png"
@@ -166,12 +166,12 @@ proxy-groups:
   - {name: 狮城手动, <<: *SD, filter: *SG, icon: "https://git.5201888.xyz/https://raw.githubusercontent.com/AdoreYL/icons/main/country/corner/singapore_02.png"}
   - {name: 美国手动, <<: *SD, filter: *US, icon: "https://git.5201888.xyz/https://raw.githubusercontent.com/AdoreYL/icons/main/country/corner/unitedstates_03.png"}
   - {name: 韩国手动, <<: *SD, filter: *KR, icon: "https://git.5201888.xyz/https://raw.githubusercontent.com/AdoreYL/icons/main/country/corner/korea_01.png"}
-  - {name: 香港故转, <<: *FB, filter: *HK, lazy: false, icon: *Failover}
-  - {name: 日本故转, <<: *FB, filter: *JP, lazy: false, icon: *Failover}
-  - {name: 台湾故转, <<: *FB, filter: *TW, lazy: false, icon: *Failover}
-  - {name: 狮城故转, <<: *FB, filter: *SG, lazy: false, icon: *Failover}
-  - {name: 美国故转, <<: *FB, filter: *US, lazy: false, icon: *Failover}
-  - {name: 韩国故转, <<: *FB, filter: *KR, lazy: false, icon: *Failover}
+  - {name: 香港故转, <<: *FB, filter: *HK, icon: *Failover}
+  - {name: 日本故转, <<: *FB, filter: *JP, icon: *Failover}
+  - {name: 台湾故转, <<: *FB, filter: *TW, icon: *Failover}
+  - {name: 狮城故转, <<: *FB, filter: *SG, icon: *Failover}
+  - {name: 美国故转, <<: *FB, filter: *US, icon: *Failover}
+  - {name: 韩国故转, <<: *FB, filter: *KR, icon: *Failover}
   - {name: 香港自动, <<: *URL, filter: *HK, icon: *Auto}
   - {name: 日本自动, <<: *URL, filter: *JP, icon: *Auto}
   - {name: 台湾自动, <<: *URL, filter: *TW, icon: *Auto}
